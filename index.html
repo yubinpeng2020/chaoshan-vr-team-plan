@@ -120,6 +120,27 @@ h4::before{content:"";width:14px;height:2px;background:var(--teal);border-radius
 .rcard .row b{color:var(--ink);font-weight:600}
 .dot{width:5px;height:5px;border-radius:50%;background:var(--line);flex:0 0 auto}
 
+/* ---------- 下载卡 ---------- */
+.dl-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.dl-card{
+  display:flex;align-items:flex-start;gap:13px;background:var(--paper-2);border:1px solid var(--line);
+  border-radius:var(--r);padding:16px;color:inherit;text-decoration:none;
+  transition:transform .15s ease,box-shadow .15s ease,border-color .15s
+}
+.dl-card:hover{text-decoration:none;transform:translateY(-2px);box-shadow:var(--shadow);border-color:#cfd8d3}
+.dl-ico{
+  flex:0 0 auto;width:42px;height:42px;border-radius:11px;background:var(--teal);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);
+  font-size:19px;font-weight:700
+}
+.dl-body{flex:1 1 auto;min-width:0}
+.dl-body b{display:block;font-size:15.5px;color:var(--ink);margin-bottom:3px}
+.dl-body em{font-style:normal;font-size:13.5px;color:var(--ink-3);line-height:1.65;display:block}
+.dl-btn{
+  flex:0 0 auto;align-self:center;font-size:13px;font-weight:600;color:var(--teal);
+  background:var(--teal-soft);border-radius:999px;padding:6px 13px;white-space:nowrap
+}
+
 /* ---------- 人员详情 ---------- */
 .role{
   background:var(--paper-2);border:1px solid var(--line);border-radius:18px;
@@ -233,6 +254,11 @@ footer p{margin:0 0 6px}
   }
   .nav a{font-size:12.5px;padding:4px 9px;line-height:1.45;letter-spacing:.01em}
   .grid-roles{grid-template-columns:1fr}
+  .dl-grid{grid-template-columns:1fr}
+  .dl-card{flex-wrap:wrap;padding:14px;row-gap:10px}
+  .dl-ico{order:1}
+  .dl-body{order:2;flex:1 1 calc(100% - 56px)}
+  .dl-btn{order:3;margin-left:auto}
   .role{border-radius:16px;padding:16px 15px}
   .role-head{gap:8px}
   .chips{margin-left:0;width:100%}
@@ -297,6 +323,7 @@ footer p{margin:0 0 6px}
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#overview" class="on">分工总表</a>
+    <a href="#files">下载材料</a>
     <a href="#s1">S1 陈逸荣</a>
     <a href="#s2">S2 王龙辉</a>
     <a href="#s3">S3 张鈴鈞</a>
@@ -387,9 +414,34 @@ footer p{margin:0 0 6px}
     <div class="callout">每人另外都要做一件事：<b>访 1 个人</b>（见"全员任务"）。</div>
   </section>
 
+  <!-- ============ 下载 ============ -->
+  <section id="files">
+    <div class="sec-head"><span class="sec-no">02</span><h2>下载材料</h2></div>
+    <p class="sec-note">就两个文件，点一下直接下。手机上也能下，用 WPS 或 Excel 打开表格。</p>
+
+    <div class="dl-grid">
+      <a class="dl-card" href="files/采集表工具包_学生版.xlsx" download>
+        <span class="dl-ico">表</span>
+        <span class="dl-body">
+          <b>采集表工具包（学生版）.xlsx</b>
+          <em>11 张表：平台普查、测评细项、任务测试、五项简评、政策、官方数据、问卷投放、原话、访谈、自建样本。只填自己那几张。</em>
+        </span>
+        <span class="dl-btn">下载 .xlsx</span>
+      </a>
+      <a class="dl-card" href="files/受众问卷_16题.html" target="_blank" rel="noopener">
+        <span class="dl-ico">卷</span>
+        <span class="dl-body">
+          <b>受众问卷（16 题）</b>
+          <em>可直接照着在腾讯问卷／问卷星里建卷；含卷首语、题目、结束语。120 份起步。</em>
+        </span>
+        <span class="dl-btn">打开网页版</span>
+      </a>
+    </div>
+  </section>
+
   <!-- ============ S1 ============ -->
   <section id="s1">
-    <div class="sec-head"><span class="sec-no">02</span><h2>每个人的任务</h2></div>
+    <div class="sec-head"><span class="sec-no">03</span><h2>每个人的任务</h2></div>
 
     <article class="role">
       <div class="role-head">
@@ -412,7 +464,7 @@ footer p{margin:0 0 6px}
 
       <h4>建议操作路径</h4>
       <ol class="steps">
-        <li>打开 <b>采集表工具包_v5_十人版.xlsx</b> 的「表1-平台普查」，12 个字段一个不加。</li>
+        <li>打开 <a href="files/采集表工具包_学生版.xlsx" download><b>采集表工具包（学生版）.xlsx</b></a> 的「表1-平台普查」，12 个字段一个不加。</li>
         <li>按 6 条渠道搜，搜到就记，搜不到跳过：
           <ul>
             <li>微信"搜一搜"搜 潮州｜汕头｜潮汕 非遗｜侨批｜小公园｜英歌舞，切到"小程序"标签；</li>
@@ -555,7 +607,7 @@ footer p{margin:0 0 6px}
 
       <h4>建议操作路径</h4>
       <ol class="steps">
-        <li><b>11/26 当天必须发出去</b>，这是全项目唯一不能晚的一步。</li>
+        <li>先看 <a href="files/受众问卷_16题.html" target="_blank" rel="noopener"><b>受众问卷（16 题）</b></a>，照它在腾讯问卷或问卷星里建卷。<b>11/26 当天必须发出去</b>，这是全项目唯一不能晚的一步。</li>
         <li>渠道按表7 一条条发：自己班群 40｜社团群 30｜潮汕老乡群 30｜朋友圈 25｜家人群 15（<b>60 岁以上样本靠这条</b>）｜私聊 10 人。</li>
         <li>每天 10 分钟催一次，晚 8 点发一句"还差 X 份"，<b>每次换说法</b>，重复同一句会被屏蔽。</li>
         <li>12/01 晚看数：不到 100 份立刻说，别自己扛。</li>
@@ -749,7 +801,7 @@ footer p{margin:0 0 6px}
 
   <!-- ============ 全员任务 ============ -->
   <section id="all">
-    <div class="sec-head"><span class="sec-no">03</span><h2>所有人都要做的一件事</h2></div>
+    <div class="sec-head"><span class="sec-no">04</span><h2>所有人都要做的一件事</h2></div>
 
     <article class="role">
       <div class="role-head">
@@ -784,7 +836,7 @@ footer p{margin:0 0 6px}
 
   <!-- ============ 规矩 ============ -->
   <section id="rules">
-    <div class="sec-head"><span class="sec-no">04</span><h2>交件规矩（10 个人都照这个来）</h2></div>
+    <div class="sec-head"><span class="sec-no">05</span><h2>交件规矩（10 个人都照这个来）</h2></div>
 
     <article class="role">
       <ol class="steps">
@@ -801,7 +853,7 @@ footer p{margin:0 0 6px}
 
   <!-- ============ 日期 ============ -->
   <section id="dates">
-    <div class="sec-head"><span class="sec-no">05</span><h2>关键日期</h2></div>
+    <div class="sec-head"><span class="sec-no">06</span><h2>关键日期</h2></div>
     <p class="sec-note">红点是硬节点，错过不补。</p>
 
     <article class="role">
@@ -823,7 +875,7 @@ footer p{margin:0 0 6px}
 
   <!-- ============ 访谈 8 问 ============ -->
   <section id="interview">
-    <div class="sec-head"><span class="sec-no">06</span><h2>访谈 8 问</h2></div>
+    <div class="sec-head"><span class="sec-no">07</span><h2>访谈 8 问</h2></div>
     <p class="sec-note">照念，顺序不能改。</p>
 
     <article class="role">
