@@ -142,6 +142,18 @@ h4::before{content:"";width:14px;height:2px;background:var(--teal);border-radius
   background:var(--teal-soft);border-radius:999px;padding:6px 13px;white-space:nowrap
 }
 
+/* 访谈表：一人一份 */
+.dl-sub{margin-top:20px;border-top:1px dashed var(--line);padding-top:18px}
+.dl-sub h4{font-size:14px;font-weight:700;color:var(--ink-2);margin:0 0 4px}
+.dl-sub p{margin:0 0 12px;font-size:13px;color:var(--ink-3);line-height:1.6}
+.dl-names{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:8px}
+.dl-names a{
+  display:flex;align-items:baseline;gap:7px;padding:9px 12px;border:1px solid var(--line-2);
+  border-radius:10px;background:#fcfbf7;font-size:13.5px;color:var(--ink);transition:.16s
+}
+.dl-names a b{font-size:11.5px;color:var(--teal-2);font-weight:700;letter-spacing:.02em}
+.dl-names a:hover{background:var(--teal-soft);border-color:#cbdad5;text-decoration:none}
+
 /* ---------- 人员详情 ---------- */
 .role{
   background:var(--paper-2);border:1px solid var(--line);border-radius:18px;
@@ -388,9 +400,9 @@ footer p{margin:0 0 6px}
       </a>
       <a class="rcard" href="#s7">
         <div class="top"><span class="badge">S7</span><span class="who">单佳鹏</span></div>
-        <p class="job">现场实拍 + 影像素材</p>
-        <div class="row"><span>实拍 20 张 + 对照短片 1 条 + 截图统一处理</span></div>
-        <div class="row"><span><b>8 小时</b></span><i class="dot"></i><span>截止 <b>12/05</b></span></div>
+        <p class="job">现场实拍 + 对照拼图</p>
+        <div class="row"><span>实拍 8 张 + 对照拼图 2 张 + 截图统一处理</span></div>
+        <div class="row"><span><b>6 小时</b></span><i class="dot"></i><span>截止 <b>12/06</b></span></div>
       </a>
       <a class="rcard" href="#s8">
         <div class="top"><span class="badge">S8</span><span class="who">陈锐城</span></div>
@@ -425,7 +437,7 @@ footer p{margin:0 0 6px}
         <span class="dl-ico">表</span>
         <span class="dl-body">
           <b>采集表工具包（学生版）.xlsx</b>
-          <em>11 个标签页：平台普查、测评细项、任务测试、五项简评、政策、官方数据、问卷投放、原话、访谈（表9，人人都要填）、自建样本。只填自己那几张。</em>
+          <em>9 张表：平台普查、测评细项、任务测试、五项简评、政策、官方数据、问卷投放、原话、自建样本（内含访谈模板作底样）。只填自己那几张。</em>
         </span>
         <span class="dl-btn">下载 .xlsx</span>
       </a>
@@ -437,6 +449,23 @@ footer p{margin:0 0 6px}
         </span>
         <span class="dl-btn">打开网页版</span>
       </a>
+    </div>
+
+    <div class="dl-sub">
+      <h4>访谈记录表：一人一份，10 份</h4>
+      <p>找自己的名字点下去。表里编号、访问人、"访谁"都已经印好，你只填对象、时间、8 个答案和三句话。</p>
+      <div class="dl-names">
+        <a href="files/访谈表/访谈记录_T01_陈逸荣.xlsx" download><b>T01</b>陈逸荣</a>
+        <a href="files/访谈表/访谈记录_T02_王龙辉.xlsx" download><b>T02</b>王龙辉</a>
+        <a href="files/访谈表/访谈记录_T03_张鈴鈞.xlsx" download><b>T03</b>张鈴鈞</a>
+        <a href="files/访谈表/访谈记录_T04_林茉思.xlsx" download><b>T04</b>林茉思</a>
+        <a href="files/访谈表/访谈记录_T05_苏琳珠.xlsx" download><b>T05</b>苏琳珠</a>
+        <a href="files/访谈表/访谈记录_T06_梁昊岚.xlsx" download><b>T06</b>梁昊岚</a>
+        <a href="files/访谈表/访谈记录_T07_单佳鹏.xlsx" download><b>T07</b>单佳鹏</a>
+        <a href="files/访谈表/访谈记录_T08_陈锐城.xlsx" download><b>T08</b>陈锐城</a>
+        <a href="files/访谈表/访谈记录_T09_梁智平.xlsx" download><b>T09</b>梁智平</a>
+        <a href="files/访谈表/访谈记录_T10_林雪琪.xlsx" download><b>T10</b>林雪琪</a>
+      </div>
     </div>
   </section>
 
@@ -501,7 +530,7 @@ footer p{margin:0 0 6px}
             <tr><td class="n">1</td><td data-label="材料">表1B 测评细项</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">11/30 交 4 个，12/03 交齐</td></tr>
             <tr><td class="n">2</td><td data-label="材料">表2 任务测试（场景脚本 S1/S2/S3）</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">同上</td></tr>
             <tr><td class="n">3</td><td data-label="材料">表3 五项简评</td><td class="qty" data-label="数量">6 份</td><td class="due" data-label="交件日">同上</td></tr>
-            <tr><td class="n">4</td><td data-label="材料">截图（每平台 6 张）+ 手持实拍</td><td class="qty" data-label="数量">36 + 6</td><td class="due" data-label="交件日">12/03</td></tr>
+            <tr><td class="n">4</td><td data-label="材料">截图（每平台 6 张）</td><td class="qty" data-label="数量">36 张</td><td class="due" data-label="交件日">12/03</td></tr>
           </tbody>
         </table>
       </div>
@@ -513,9 +542,8 @@ footer p{margin:0 0 6px}
         <li>每步记三样：完成没（是/否）、用时几秒、点了几下；卡住就写一句"卡在哪"。</li>
         <li>五项简评（1–5 分，5 秒内凭第一感觉）：找得到｜看得清｜跑得动｜看得懂｜还想再来；另加"会不会推荐给外地朋友"（0–10）。</li>
         <li>每平台截 6 张：首屏完成｜加载中白屏｜S1 找地方（或搜不到）｜S2 全景画面｜S3 讲解或"没有介绍"｜最严重问题现场（花屏、文字叠加、按钮点不到）。</li>
-        <li>拍 1 张手持实拍：手机 + 一点环境，<b>只拍屏幕等于没拍</b>。</li>
       </ol>
-      <p class="time">预计用时 <b>5 小时</b>（6 个平台 × 50 分钟）</p>
+      <p class="time">预计用时 <b>5 小时</b>（6 个平台 × 50 分钟）。现场实拍不用你拍，统一由单佳鹏拍。</p>
     </article>
 
     <!-- ============ S3 ============ -->
@@ -535,7 +563,7 @@ footer p{margin:0 0 6px}
             <tr><td class="n">1</td><td data-label="材料">表1B 测评细项</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">11/30 交 4 个，12/03 交齐</td></tr>
             <tr><td class="n">2</td><td data-label="材料">表2 任务测试（馆藏脚本 H1/H2/H3）</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">同上</td></tr>
             <tr><td class="n">3</td><td data-label="材料">表3 五项简评</td><td class="qty" data-label="数量">6 份</td><td class="due" data-label="交件日">同上</td></tr>
-            <tr><td class="n">4</td><td data-label="材料">截图（每平台 6 张）+ 实拍</td><td class="qty" data-label="数量">36 + 5</td><td class="due" data-label="交件日">12/03</td></tr>
+            <tr><td class="n">4</td><td data-label="材料">截图（每平台 6 张）</td><td class="qty" data-label="数量">36 张</td><td class="due" data-label="交件日">12/03</td></tr>
           </tbody>
         </table>
       </div>
@@ -546,10 +574,9 @@ footer p{margin:0 0 6px}
         <li>数清"能点开的展品／场景数"，这个数字报告要用。</li>
         <li>五项简评同上；语言选项单独记一笔：<b>有没有潮汕话</b>（普通话／潮汕话／英文／无）。</li>
         <li>每平台截 6 张：展厅入口｜展品列表（证明有多少件）｜展品详情｜讲解页或"只有标题"｜语言选项｜死链空页。</li>
-        <li>实拍 5 张：请家里长辈操作 2 张（侧后方，不拍脸）+ 自己实测 3 张。</li>
         <li>每平台写一句判断，<b>不许写"无问题"</b>——真找不到问题，就写"我们找了 3 分钟才找到详情入口"。</li>
       </ol>
-      <p class="time">预计用时 <b>4.5 小时</b>（6 个平台 × 45 分钟）</p>
+      <p class="time">预计用时 <b>4.5 小时</b>（6 个平台 × 45 分钟）。现场实拍不用你拍，统一由单佳鹏拍。</p>
     </article>
 
     <!-- ============ S4 ============ -->
@@ -633,7 +660,7 @@ footer p{margin:0 0 6px}
           <tbody>
             <tr><td class="n">1</td><td data-label="材料">表8 原话摘录（一字不改，含错别字）</td><td class="qty" data-label="数量">25 条</td><td class="due" data-label="交件日">11/30 交 10 条，12/05 交齐</td></tr>
             <tr><td class="n">2</td><td data-label="材料">原话截图：<b>原图 + 打码图</b>（原图不动，打码图遮住用户名和头像）</td><td class="qty" data-label="数量">各 25 张</td><td class="due" data-label="交件日">12/05</td></tr>
-            <tr><td class="n">3</td><td data-label="材料">自己那份访谈记录（表9）+ 现场照</td><td class="qty" data-label="数量">1 份 + 1 张</td><td class="due" data-label="交件日">12/05</td></tr>
+            <tr><td class="n">3</td><td data-label="材料">自己那份访谈记录（T06）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">12/05</td></tr>
           </tbody>
         </table>
       </div>
@@ -672,18 +699,18 @@ footer p{margin:0 0 6px}
     <article class="role" id="s7">
       <div class="role-head">
         <span class="badge">S7</span>
-        <h3><span class="name">单佳鹏</span><span class="sep">·</span>现场实拍 + 影像素材</h3>
-        <div class="chips"><span class="chip">8 小时</span><span class="chip date">12/05 交齐</span></div>
+        <h3><span class="name">单佳鹏</span><span class="sep">·</span>现场实拍 + 对照拼图</h3>
+        <div class="chips"><span class="chip">6 小时</span><span class="chip date">12/05 交齐</span></div>
       </div>
-      <p class="pos"><b>你的定位</b>把你手上那几样用上——拍照、修图、剪片、做模型。你负责三件事：去现场拍一组"真地方"的照片，剪一条 60–90 秒的对照短片，再把全队零散的截图收拾干净。整个项目里"眼睛看见的东西"都归你。</p>
+      <p class="pos"><b>你的定位</b>用你手上那两样：拍照、修图。三件事——去现场拍一组"真地方"的照片（8 张够，不用多拍），把线上截图和现场照片拼成 2 张对照图，再把全队零散的截图收拾干净。整个项目里"眼睛看得见的东西"都归你。</p>
 
       <h4>你要交的材料</h4>
       <div class="tbl-wrap">
         <table class="resp">
           <thead><tr><th>#</th><th>材料</th><th>数量</th><th>交件日</th></tr></thead>
           <tbody>
-            <tr><td class="n">1</td><td data-label="材料">现场实拍（原图，不修不裁）</td><td class="qty" data-label="数量">20 张</td><td class="due" data-label="交件日">12/05</td></tr>
-            <tr><td class="n">2</td><td data-label="材料">对照短片（线上录屏 + 现场实拍，带字幕）</td><td class="qty" data-label="数量">1 条，60–90 秒</td><td class="due" data-label="交件日">12/05</td></tr>
+            <tr><td class="n">1</td><td data-label="材料">现场实拍（原图，不修不裁）</td><td class="qty" data-label="数量">8 张</td><td class="due" data-label="交件日">12/05</td></tr>
+            <tr><td class="n">2</td><td data-label="材料">对照拼图（左线上截图／右现场同角度，带标注）</td><td class="qty" data-label="数量">2 张</td><td class="due" data-label="交件日">12/06</td></tr>
             <tr><td class="n">3</td><td data-label="材料">全队截图统一处理（裁齐、改名、标注）</td><td class="qty" data-label="数量">全部截图</td><td class="due" data-label="交件日">12/06</td></tr>
           </tbody>
         </table>
@@ -691,14 +718,14 @@ footer p{margin:0 0 6px}
 
       <h4>建议操作路径</h4>
       <ol class="steps">
-        <li>拍三个点就够：<b>小公园中山纪念亭</b>、<b>牌坊街／小公园开埠区</b>、<b>侨批文物馆或潮汕历史文化博览中心</b>（挑能免费进的）。一个点拍 6–7 张。</li>
-        <li>每个点拍三类画面：① 地点外观或入口 ② 展陈和说明牌（要拍清上面的字）③ 现场的人（侧后方，不拍正脸）。手机横拍、<b>用原图，不美颜不滤镜</b>。</li>
-        <li>当场就能对比：站在现场，把手机上那几个线上页面打开，同样角度再拍一张——<b>"线下看得到、线上看不到"这种对照最有说服力</b>。</li>
-        <li>剪片：开头 10 秒放线上页面录屏（手机自带录屏即可），后面接现场实拍，字幕写清"线上：看到了什么／现场：看到了什么"。不加花哨转场、不配背景音乐。</li>
-        <li>全队截图处理：把大家交来的截图裁掉多余边框、按编号统一改名、摩尔纹明显的重截一张。露了真名的打码。</li>
-        <li>交付前自查：每张实拍能看出是哪儿、片子有字幕、截图里没有真名。</li>
+        <li>拍三个点就够：<b>小公园中山纪念亭</b>、<b>牌坊街／小公园开埠区</b>、<b>侨批文物馆或潮汕历史文化博览中心</b>（挑能免费进的）。一个点 2–3 张，<b>总共不超过 8 张</b>。</li>
+        <li>每个点只拍两类：① 地点外观或入口 ② 展陈和说明牌（要拍清上面的字）。手机横拍、<b>原图，不美颜不滤镜</b>。</li>
+        <li>当场做对照：站在现场，把手机上对应的线上页面打开，<b>同样角度再拍一张</b>——这一张是拼图的原料，三个点各留一张。</li>
+        <li>拼 2 张对照图：左边线上截图、右边现场同角度照片，两边一样高，下面加一行小字标注，例"线上：只有一张封面图／现场：整面墙的侨批原件"。白底、细边、字看得清，不要加花哨样式。</li>
+        <li>全队截图处理：裁掉多余边框、按编号统一改名、摩尔纹明显的重截一张。露了真名的打码。</li>
+        <li>交付前自查：每张实拍能看出是哪儿、两张拼图的标注对得上、截图里没有真名。</li>
       </ol>
-      <p class="time">预计用时 <b>8 小时</b>（实拍 3h，剪辑 3h，截图处理 2h）</p>
+      <p class="time">预计用时 <b>6 小时</b>（实拍 2h，拼图 1.5h，截图处理 2.5h）。<b>60–90 秒那条对照短片这一轮不拍</b>，等答辩前再说。</p>
     </article>
 
     <!-- ============ S8 ============ -->
@@ -815,11 +842,11 @@ footer p{margin:0 0 6px}
         <table class="resp">
           <thead><tr><th>谁访</th><th>访什么人</th></tr></thead>
           <tbody>
-            <tr><td data-label="谁访">林茉思、梁昊岚、林雪琪</td><td data-label="访谁">潮汕本地年轻人（18–35 岁）</td></tr>
-            <tr><td data-label="谁访">陈逸荣、单佳鹏</td><td data-label="访谁">潮汕本地中年人（36–55 岁）</td></tr>
-            <tr><td data-label="谁访">王龙辉、张鈴鈞、陈锐城</td><td data-label="访谁">没去过潮汕的同学</td></tr>
-            <tr><td data-label="谁访">梁智平</td><td data-label="访谁">到过潮汕的外地游客</td></tr>
-            <tr><td data-label="谁访">苏琳珠</td><td data-label="访谁">家里 60 岁以上长辈（把手机递给他，看他手指往哪点）</td></tr>
+            <tr><td data-label="谁访"><b>T04</b> 林茉思、<b>T06</b> 梁昊岚、<b>T10</b> 林雪琪</td><td data-label="访谁">潮汕本地年轻人（18–35 岁）</td></tr>
+            <tr><td data-label="谁访"><b>T01</b> 陈逸荣、<b>T07</b> 单佳鹏</td><td data-label="访谁">潮汕本地中年人（36–55 岁）</td></tr>
+            <tr><td data-label="谁访"><b>T02</b> 王龙辉、<b>T03</b> 张鈴鈞、<b>T08</b> 陈锐城</td><td data-label="访谁">没去过潮汕的同学</td></tr>
+            <tr><td data-label="谁访"><b>T09</b> 梁智平</td><td data-label="访谁">到过潮汕的外地游客</td></tr>
+            <tr><td data-label="谁访"><b>T05</b> 苏琳珠</td><td data-label="访谁">家里 60 岁以上长辈（把手机递给他，看他手指往哪点）</td></tr>
           </tbody>
         </table>
       </div>
@@ -829,8 +856,8 @@ footer p{margin:0 0 6px}
         <li>时间：<b>11/29 – 12/01</b> 之间做完，一天最多 2 个。</li>
         <li>开口照念："我们在做一个挑战杯调研，关于潮汕文化的线上展览、VR 这些。不推销，就想听你说几句真实想法，10 分钟。不记名字，报告里只写'某位本地居民'。"</li>
         <li>8 个问题照念，不增不减（见文末"访谈 8 问"）。</li>
-        <li>答完<b>当天</b>填<b>表9-访谈记录模板</b>——就在下载区那个 <a class="inline-link" href="files/采集表工具包_学生版.xlsx" download>采集表工具包</a> 里（倒数第 2 个标签页「表9-访谈记录模板」），<b>一人一份</b>，别几个人合填一张。</li>
-        <li>表9 + 现场照一起交老师。</li>
+        <li>答完<b>当天</b>填你自己那份——到「下载材料」最下面找带<b>自己名字和 T 号</b>的那一份（编号、访问人、访谁都已经印好），只填对象、时间、8 个答案和三句话。<b>一人一份，别几个人合填一张。</b></li>
+        <li>存成 <code>访谈_T04_林茉思_日期.xlsx</code>（换成你自己的号），放群文件夹 <code>2026挑战杯_材料/09_访谈/</code>。</li>
       </ol>
     </article>
 
@@ -867,8 +894,8 @@ footer p{margin:0 0 6px}
         <li><span class="when">12/02<em>周三</em></span><span class="what">苏琳珠交问卷数据（原始 + 清洗）｜林茉思交 6 条链接清单</span></li>
         <li><span class="when">12/03<em>周四</em></span><span class="what">王龙辉、张鈴鈞各交 6 个｜林雪琪交 10 行｜梁智平 12 条数据交齐</span></li>
         <li><span class="when">12/04<em>周五</em></span><span class="what">陈锐城交表10（两个页面各 1 份）</span></li>
-        <li><span class="when">12/05<em>周六</em></span><span class="what">陈锐城交自述 800 字｜梁昊岚交 25 条 + 自己那份访谈｜单佳鹏交实拍 20 张 + 对照短片</span></li>
-        <li class="key"><span class="when">12/06<em>周日</em></span><span class="what"><b>23:00 材料硬截止</b>：普查交齐、实测交齐、政策数据交齐、原话与访谈交齐、截图统一处理完</span></li>
+        <li><span class="when">12/05<em>周六</em></span><span class="what">陈锐城交自述 800 字｜梁昊岚交 25 条 + 自己那份访谈｜单佳鹏交实拍 8 张</span></li>
+        <li class="key"><span class="when">12/06<em>周日</em></span><span class="what"><b>23:00 材料硬截止</b>：普查交齐、实测交齐、政策数据交齐、原话与访谈交齐、单佳鹏交对照拼图 2 张并处理完全队截图</span></li>
         <li><span class="when">12/08<em>周二</em></span><span class="what">只答复核问题，不再新增</span></li>
         <li class="key"><span class="when">12/10<em>周四</em></span><span class="what"><b>报学院</b></span></li>
       </ul>
@@ -891,7 +918,7 @@ footer p{margin:0 0 6px}
         <li>有没有哪一刻你觉得"这个做得挺好的"？</li>
         <li>如果只能改一处，你最想让它改什么？</li>
       </ol>
-      <p class="time">表9 在 <a class="inline-link" href="files/采集表工具包_学生版.xlsx" download>采集表工具包</a> 的「表9-访谈记录模板」页。访完当天填，另写三句话：<b>① 他最在意的是＿＿ ② 他最没想到的是＿＿ ③ 哪句能用在报告哪一节＿＿</b></p>
+      <p class="time">访谈记录表在「<a class="inline-link" href="#files">下载材料</a>」最下面，找带自己名字的那份（T01–T10）。访完当天填，另写三句话：<b>① 他最在意的是＿＿ ② 他最没想到的是＿＿ ③ 哪句能用在报告哪一节＿＿</b></p>
     </article>
   </section>
 
