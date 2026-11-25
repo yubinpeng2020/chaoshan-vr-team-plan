@@ -144,6 +144,8 @@ h4::before{content:"";width:14px;height:2px;background:var(--teal);border-radius
 
 /* 访谈表：一人一份 */
 .dl-sub{margin-top:20px;border-top:1px dashed var(--line);padding-top:18px}
+.num-note{font-size:13px;color:var(--ink-3);line-height:1.7;margin:10px 0 14px;padding-left:2px}
+.num-note code{font-size:12.5px;background:#f0eee7;padding:1px 5px;border-radius:4px;color:var(--ink-2)}
 .dl-sub h4{font-size:14px;font-weight:700;color:var(--ink-2);margin:0 0 4px}
 .dl-sub p{margin:0 0 12px;font-size:13px;color:var(--ink-3);line-height:1.6}
 .dl-names{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:8px}
@@ -349,7 +351,6 @@ footer p{margin:0 0 6px}
     <a href="#s10">S10 林雪琪</a>
     <a href="#all">全员任务</a>
     <a href="#rules">交件规矩</a>
-    <a href="#dates">关键日期</a>
     <a href="#interview">访谈 8 问</a>
   </div>
 </nav>
@@ -530,7 +531,7 @@ footer p{margin:0 0 6px}
             <tr><td class="n">1</td><td data-label="材料">表1B 测评细项</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">11/30 交 4 个，12/03 交齐</td></tr>
             <tr><td class="n">2</td><td data-label="材料">表2 任务测试（场景脚本 S1/S2/S3）</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">同上</td></tr>
             <tr><td class="n">3</td><td data-label="材料">表3 五项简评</td><td class="qty" data-label="数量">6 份</td><td class="due" data-label="交件日">同上</td></tr>
-            <tr><td class="n">4</td><td data-label="材料">截图（每平台 6 张）</td><td class="qty" data-label="数量">36 张</td><td class="due" data-label="交件日">12/03</td></tr>
+            <tr><td class="n">4</td><td data-label="材料">截图（每平台 6 张，用该平台的 P 号）</td><td class="qty" data-label="数量">36 张</td><td class="due" data-label="交件日">12/03</td></tr>
           </tbody>
         </table>
       </div>
@@ -563,7 +564,7 @@ footer p{margin:0 0 6px}
             <tr><td class="n">1</td><td data-label="材料">表1B 测评细项</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">11/30 交 4 个，12/03 交齐</td></tr>
             <tr><td class="n">2</td><td data-label="材料">表2 任务测试（馆藏脚本 H1/H2/H3）</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">同上</td></tr>
             <tr><td class="n">3</td><td data-label="材料">表3 五项简评</td><td class="qty" data-label="数量">6 份</td><td class="due" data-label="交件日">同上</td></tr>
-            <tr><td class="n">4</td><td data-label="材料">截图（每平台 6 张）</td><td class="qty" data-label="数量">36 张</td><td class="due" data-label="交件日">12/03</td></tr>
+            <tr><td class="n">4</td><td data-label="材料">截图（每平台 6 张，用该平台的 P 号）</td><td class="qty" data-label="数量">36 张</td><td class="due" data-label="交件日">12/03</td></tr>
           </tbody>
         </table>
       </div>
@@ -594,7 +595,7 @@ footer p{margin:0 0 6px}
           <thead><tr><th>#</th><th>材料</th><th>数量</th><th>交件日</th></tr></thead>
           <tbody>
             <tr><td class="n">1</td><td data-label="材料">表5 政策摘录（可引用原文 ≤100 字）</td><td class="qty" data-label="数量">6 条</td><td class="due" data-label="交件日">11/30 交 3 条，12/03 交齐</td></tr>
-            <tr><td class="n">2</td><td data-label="材料">政策原页截图（必须同框露网址栏 + 发布日期）</td><td class="qty" data-label="数量">6 张</td><td class="due" data-label="交件日">12/03</td></tr>
+            <tr><td class="n">2</td><td data-label="材料">政策原页截图（Z01–Z06，必须同框露网址栏 + 发布日期）</td><td class="qty" data-label="数量">6 张</td><td class="due" data-label="交件日">12/03</td></tr>
 <tr><td class="n">3</td><td data-label="材料">6 条链接清单（一列网址，方便老师核对）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">12/02</td></tr>
           </tbody>
         </table>
@@ -628,7 +629,7 @@ footer p{margin:0 0 6px}
             <tr><td class="n">1</td><td data-label="材料">问卷发出（16 题，腾讯问卷／问卷星）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">时间自己定，12/01 前发完</td></tr>
             <tr><td class="n">2</td><td data-label="材料">表7 投放记录</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">边发边记</td></tr>
             <tr><td class="n">3</td><td data-label="材料">原始数据 + 清洗后数据（写明删了几份、为什么）</td><td class="qty" data-label="数量">各 1 份</td><td class="due" data-label="交件日">12/02</td></tr>
-            <tr><td class="n">4</td><td data-label="材料">截图（填写页 2 + 后台 4）+ 推广实拍</td><td class="qty" data-label="数量">8 张</td><td class="due" data-label="交件日">12/02</td></tr>
+            <tr><td class="n">4</td><td data-label="材料">截图（Q01–Q06：填写页 2 + 后台 4）＋推广现场 2 张</td><td class="qty" data-label="数量">6 + 2</td><td class="due" data-label="交件日">12/02</td></tr>
           </tbody>
         </table>
       </div>
@@ -659,7 +660,7 @@ footer p{margin:0 0 6px}
           <thead><tr><th>#</th><th>材料</th><th>数量</th><th>交件日</th></tr></thead>
           <tbody>
             <tr><td class="n">1</td><td data-label="材料">表8 原话摘录（一字不改，含错别字）</td><td class="qty" data-label="数量">25 条</td><td class="due" data-label="交件日">11/30 交 10 条，12/05 交齐</td></tr>
-            <tr><td class="n">2</td><td data-label="材料">原话截图：<b>原图 + 打码图</b>（原图不动，打码图遮住用户名和头像）</td><td class="qty" data-label="数量">各 25 张</td><td class="due" data-label="交件日">12/05</td></tr>
+            <tr><td class="n">2</td><td data-label="材料">原话截图 <b>C01–C25</b>：<b>原图 + 打码图</b>（原图不动，打码图遮住用户名和头像）</td><td class="qty" data-label="数量">各 25 张</td><td class="due" data-label="交件日">12/05</td></tr>
             <tr><td class="n">3</td><td data-label="材料">自己那份访谈记录（T06）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">12/05</td></tr>
           </tbody>
         </table>
@@ -709,8 +710,8 @@ footer p{margin:0 0 6px}
         <table class="resp">
           <thead><tr><th>#</th><th>材料</th><th>数量</th><th>交件日</th></tr></thead>
           <tbody>
-            <tr><td class="n">1</td><td data-label="材料">现场实拍（原图，不修不裁）</td><td class="qty" data-label="数量">8 张</td><td class="due" data-label="交件日">12/05</td></tr>
-            <tr><td class="n">2</td><td data-label="材料">对照拼图（左线上截图／右现场同角度，带标注）</td><td class="qty" data-label="数量">2 张</td><td class="due" data-label="交件日">12/06</td></tr>
+            <tr><td class="n">1</td><td data-label="材料">现场实拍 <b>PH01–PH08</b>（原图，不修不裁）</td><td class="qty" data-label="数量">8 张</td><td class="due" data-label="交件日">12/05</td></tr>
+            <tr><td class="n">2</td><td data-label="材料">对照拼图 <b>PH09、PH10</b>（左线上截图／右现场同角度，带标注）</td><td class="qty" data-label="数量">2 张</td><td class="due" data-label="交件日">12/06</td></tr>
             <tr><td class="n">3</td><td data-label="材料">全队截图统一处理（裁齐、改名、标注）</td><td class="qty" data-label="数量">全部截图</td><td class="due" data-label="交件日">12/06</td></tr>
           </tbody>
         </table>
@@ -776,7 +777,7 @@ footer p{margin:0 0 6px}
           <thead><tr><th>#</th><th>材料</th><th>数量</th><th>交件日</th></tr></thead>
           <tbody>
             <tr><td class="n">1</td><td data-label="材料">表6 官方数据（每个都有出处链接）</td><td class="qty" data-label="数量">12 条</td><td class="due" data-label="交件日">11/30 交 6 条，12/06 交齐</td></tr>
-            <tr><td class="n">2</td><td data-label="材料">数据来源截图（数字 + 标题 + 发布单位）</td><td class="qty" data-label="数量">12 张</td><td class="due" data-label="交件日">12/06</td></tr>
+            <tr><td class="n">2</td><td data-label="材料">数据来源截图 <b>D01–D12</b>（数字 + 标题 + 发布单位）</td><td class="qty" data-label="数量">12 张</td><td class="due" data-label="交件日">12/06</td></tr>
           </tbody>
         </table>
       </div>
@@ -857,7 +858,7 @@ footer p{margin:0 0 6px}
         <li>开口照念："我们在做一个挑战杯调研，关于潮汕文化的线上展览、VR 这些。不推销，就想听你说几句真实想法，10 分钟。不记名字，报告里只写'某位本地居民'。"</li>
         <li>8 个问题照念，不增不减（见文末"访谈 8 问"）。</li>
         <li>答完<b>当天</b>填你自己那份——到「下载材料」最下面找带<b>自己名字和 T 号</b>的那一份（编号、访问人、访谁都已经印好），只填对象、时间、8 个答案和三句话。<b>一人一份，别几个人合填一张。</b></li>
-        <li>存成 <code>访谈_T04_林茉思_日期.xlsx</code>（换成你自己的号），放群文件夹 <code>2026挑战杯_材料/09_访谈/</code>。</li>
+        <li>存成 <code>访谈_T04_林茉思_日期.xlsx</code>（换成你自己的号），发到 <a class="inline-link" href="mailto:ybpeng1286@stpt.edu.cn">ybpeng1286@stpt.edu.cn</a>，主题写 <code>访谈_T04_林茉思</code>。</li>
       </ol>
     </article>
 
@@ -869,8 +870,27 @@ footer p{margin:0 0 6px}
 
     <article class="role">
       <ol class="steps">
-        <li><b>交到哪</b>：群文件夹 <code>2026挑战杯_材料/</code>，按岗位号放自己的子文件夹（例：<code>02_场景实测/</code>）。</li>
-        <li><b>文件名</b>：<code>编号_内容_日期_姓名</code>，例 <code>P07_S3无讲解_20261203_王龙辉.png</code>。<b>不收 <code>IMG_2384.jpg</code>。</b></li>
+        <li><b>交到哪</b>：发到老师邮箱 <a class="inline-link" href="mailto:ybpeng1286@stpt.edu.cn">ybpeng1286@stpt.edu.cn</a>，<b>主题写"岗位号_姓名_材料名"</b>（例 <code>S2_王龙辉_6个场景实测</code>）。截图多就打包成一个 zip 再发，超过 50MB 分两封。</li>
+        <li><b>文件名</b>：<code>编号_内容_日期_姓名</code>，例 <code>P07_S3无讲解_20261203_王龙辉.png</code>。<b>不收 <code>IMG_2384.jpg</code>。</b>编号按下面这张表，别自己发明：</li>
+        </ol>
+
+        <div class="tbl-wrap" style="margin:6px 0 4px">
+          <table class="resp">
+            <thead><tr><th>前缀</th><th>管什么</th><th>谁用、用哪一段号</th></tr></thead>
+            <tbody>
+              <tr><td data-label="前缀"><b>P</b></td><td data-label="管什么">平台（普查行 + 它的截图）</td><td data-label="谁用">陈逸荣 P01–P20｜林雪琪 P21–P30｜陈锐城 P41–P42</td></tr>
+              <tr><td data-label="前缀"><b>Z</b></td><td data-label="管什么">政策原文 + 原页截图</td><td data-label="谁用">林茉思 Z01–Z06</td></tr>
+              <tr><td data-label="前缀"><b>D</b></td><td data-label="管什么">官方数据 + 来源截图</td><td data-label="谁用">梁智平 D01–D12</td></tr>
+              <tr><td data-label="前缀"><b>C</b></td><td data-label="管什么">网友原话 + 原图／打码图</td><td data-label="谁用">梁昊岚 C01–C25</td></tr>
+              <tr><td data-label="前缀"><b>Q</b></td><td data-label="管什么">问卷填写页 + 后台截图</td><td data-label="谁用">苏琳珠 Q01–Q06</td></tr>
+              <tr><td data-label="前缀"><b>T</b></td><td data-label="管什么">访谈记录（一人一份）</td><td data-label="谁用">全员 T01–T10，表头已印好</td></tr>
+              <tr><td data-label="前缀"><b>PH</b></td><td data-label="管什么">现场实拍 + 对照拼图</td><td data-label="谁用">单佳鹏 PH01–PH08（两张拼图用 PH09、PH10）</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="num-note">S2、S3 测的那 6 个平台不另编号，沿用它们在表1 里的 P 号；同一个平台的多张截图共用一个 P 号，靠"内容"那一段区分，例 <code>P07_S1找地方</code>、<code>P07_S3无讲解</code>。<b>号段是分好的，不许串号、不许跳号、不许自己另起一套。</b></p>
+
+        <ol class="steps" style="counter-reset:s 2">
         <li><b>截图必须露网址栏</b>，不裁剪、不加水印、不美颜。</li>
         <li><b>实拍</b>：不拍正脸、不露真名；对方不同意就换拍法。</li>
         <li><b>不用手机拍屏幕</b>（摩尔纹一眼看出是拍的别人的屏）。</li>
@@ -880,31 +900,9 @@ footer p{margin:0 0 6px}
     </article>
   </section>
 
-  <!-- ============ 日期 ============ -->
-  <section id="dates">
-    <div class="sec-head"><span class="sec-no">06</span><h2>关键日期</h2></div>
-    <p class="sec-note">红点是硬节点，错过不补。</p>
-
-    <article class="role">
-      <ul class="timeline">
-        <li><span class="when">11/26<em>周四</em></span><span class="what">苏琳珠定发卷时间（建议本周内发出）；每人交 1 行试填（自己那张表，老师核口径）</span></li>
-        <li class="key"><span class="when">11/27<em>周五</em></span><span class="what"><b>20:00 线上会 20 分钟</b>：各展示 1 条试填，统一口径，表格冻结</span></li>
-        <li><span class="when">11/30<em>周一</em></span><span class="what">第一批：陈逸荣 12 行｜王龙辉、张鈴鈞各 4 个｜林茉思 3 条政策｜梁智平 6 条数据｜梁昊岚 10 条原话</span></li>
-        <li><span class="when">12/01<em>周二</em></span><span class="what">回收 &lt;100 份报老师；梁昊岚抄到 18 条</span></li>
-        <li><span class="when">12/02<em>周三</em></span><span class="what">苏琳珠交问卷数据（原始 + 清洗）｜林茉思交 6 条链接清单</span></li>
-        <li><span class="when">12/03<em>周四</em></span><span class="what">王龙辉、张鈴鈞各交 6 个｜林雪琪交 10 行｜梁智平 12 条数据交齐</span></li>
-        <li><span class="when">12/04<em>周五</em></span><span class="what">陈锐城交表10（两个页面各 1 份）</span></li>
-        <li><span class="when">12/05<em>周六</em></span><span class="what">陈锐城交自述 800 字｜梁昊岚交 25 条 + 自己那份访谈｜单佳鹏交实拍 8 张</span></li>
-        <li class="key"><span class="when">12/06<em>周日</em></span><span class="what"><b>23:00 材料硬截止</b>：普查交齐、实测交齐、政策数据交齐、原话与访谈交齐、单佳鹏交对照拼图 2 张并处理完全队截图</span></li>
-        <li><span class="when">12/08<em>周二</em></span><span class="what">只答复核问题，不再新增</span></li>
-        <li class="key"><span class="when">12/10<em>周四</em></span><span class="what"><b>报学院</b></span></li>
-      </ul>
-    </article>
-  </section>
-
   <!-- ============ 访谈 8 问 ============ -->
   <section id="interview">
-    <div class="sec-head"><span class="sec-no">07</span><h2>访谈 8 问</h2></div>
+    <div class="sec-head"><span class="sec-no">06</span><h2>访谈 8 问</h2></div>
     <p class="sec-note">照念，顺序不能改。</p>
 
     <article class="role">
