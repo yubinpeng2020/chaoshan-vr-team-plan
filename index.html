@@ -72,12 +72,11 @@ a:hover{text-decoration:underline}
   backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line);
 }
 .nav-inner{
-  display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;
+  display:flex;flex-wrap:wrap;gap:5px;
   max-width:var(--maxw);margin:0 auto;padding:9px clamp(12px,4vw,28px)
 }
-.nav-inner::-webkit-scrollbar{display:none}
 .nav a{
-  flex:0 0 auto;font-size:14px;color:var(--ink-2);padding:6px 12px;border-radius:999px;
+  flex:0 0 auto;font-size:13px;color:var(--ink-2);padding:5px 9px;border-radius:999px;
   white-space:nowrap;border:1px solid transparent
 }
 .nav a:hover{background:#fff;text-decoration:none;border-color:var(--line)}
@@ -226,6 +225,13 @@ footer p{margin:0 0 6px}
   .hero{padding-top:26px}
   .hero .facts{gap:8px}
   .fact{font-size:12.5px;padding:6px 10px}
+  /* 导航：手机上不再横滑，全部换行显示 */
+  .nav-inner{
+    flex-wrap:wrap;overflow-x:visible;overflow-y:visible;
+    gap:4px 6px;padding:8px 12px;justify-content:flex-start;
+    max-height:none
+  }
+  .nav a{font-size:12.5px;padding:4px 9px;line-height:1.45;letter-spacing:.01em}
   .grid-roles{grid-template-columns:1fr}
   .role{border-radius:16px;padding:16px 15px}
   .role-head{gap:8px}
@@ -871,26 +877,40 @@ footer p{margin:0 0 6px}
   var byId = {};
   navLinks.forEach(function(a){ byId[a.getAttribute('href').slice(1)] = a; });
 
-  // 滚动高亮
+  var navEl = document.getElementById('nav');
+  function navH(){ return navEl ? navEl.offsetHeight : 56; }
+
+  // 滚动高亮（导航高度变化时重建，手机上导航会换行变成多行）
   var targets = Object.keys(byId).map(function(id){ return document.getElementById(id); }).filter(Boolean);
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
+  var io = null;
+  function buildObserver(){
+    if (!('IntersectionObserver' in window)) return;
+    if (io) io.disconnect();
+    io = new IntersectionObserver(function(entries){
       entries.forEach(function(e){
         if (e.isIntersecting) {
           navLinks.forEach(function(a){ a.classList.remove('on'); });
           var link = byId[e.target.id];
           if (link) {
             link.classList.add('on');
-            // 让当前项在导航条里可见
             var box = link.parentElement;
-            var left = link.offsetLeft - box.clientWidth / 2 + link.clientWidth / 2;
-            box.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+            if (box.scrollWidth > box.clientWidth) {
+              var left = link.offsetLeft - box.clientWidth / 2 + link.clientWidth / 2;
+              box.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+            }
           }
         }
       });
-    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    }, { rootMargin: '-' + (navH() + 12) + 'px 0px -' + Math.max(20, 50 - navH() / 10) + '% 0px', threshold: 0 });
     targets.forEach(function(t){ io.observe(t); });
   }
+  buildObserver();
+
+  var rt;
+  window.addEventListener('resize', function(){
+    clearTimeout(rt);
+    rt = setTimeout(buildObserver, 200);
+  });
 
   // 回到顶部
   var btn = document.getElementById('totop');
@@ -905,7 +925,7 @@ footer p{margin:0 0 6px}
       var el = document.querySelector(a.getAttribute('href'));
       if (!el) return;
       ev.preventDefault();
-      var y = el.getBoundingClientRect().top + window.scrollY - 62;
+      var y = el.getBoundingClientRect().top + window.scrollY - navH() - 8;
       window.scrollTo({ top: y, behavior: 'smooth' });
       history.replaceState(null, '', a.getAttribute('href'));
     });
