@@ -394,10 +394,18 @@ footer p{margin:0 0 6px}
   th{background:#efeadf!important;color:#1c2521!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   th,td{padding:4pt 6pt}
   thead{display:table-header-group}
+  /* 12 岗表：岗号列、预计列不许折行（否则 A2 被拆成两行） */
+  table.resp td[data-label="岗"],
+  table.resp td[data-label="岗"] b,
+  table.resp td[data-label="预计"]{white-space:nowrap}
 
   /* 下载区在纸上只留文件名 */
   .dl-card{padding:7pt 9pt}
   .dl-ico{background:#f2f0e9!important;color:#4a5751!important}
+
+  /* 页脚：别被拆到最后单独一页 */
+  footer{margin-top:12pt!important;padding:6pt 0 0!important;break-inside:avoid;break-before:avoid;font-size:8.5pt!important}
+  footer p{margin:0 0 3pt!important}
 }
 </style>
 </head>
@@ -507,16 +515,16 @@ footer p{margin:0 0 6px}
         <div class="row"><span>预计 <b>8.0h</b></span><span>11/30 先交 12 条｜截止 <b>12/06</b></span></div>
       </a>
       <a class="rcard" href="#b3">
-        <div class="top"><span class="badge">B3</span><span class="who">账号细看＋现场对照</span></div>
-        <p class="job">细看 6 个账号（每号 5 条）＋ 去视频里的地点实拍对照</p>
+        <div class="top"><span class="badge">B3</span><span class="who">账号 ③⑤ 类＋现场对照</span></div>
+        <p class="job">细看 6 个账号（③ 传承人 ⑤ 个人博主）＋ 实拍对照，<b>并定 12 个账号的判断口径</b></p>
         <div class="row"><span>表1B／表2／表3 ×6 + 截帧 36 + PH01–PH10</span></div>
-        <div class="row"><span>预计 <b>7.0h</b></span><span>12/03 细看｜截止 <b>12/06</b></span></div>
+        <div class="row"><span>预计 <b>7.3h</b></span><span>12/03 细看｜截止 <b>12/06</b></span></div>
       </a>
       <a class="rcard" href="#b4">
-        <div class="top"><span class="badge">B4</span><span class="who">账号细看＋问卷</span></div>
-        <p class="job">再细看 6 个账号 ＋ 问卷建卷与投放（80 份）</p>
-        <div class="row"><span>表1B／表2／表3 ×6 + 截帧 36 + 表7 + Q_原始</span></div>
-        <div class="row"><span>预计 <b>7.0h</b></span><span>截止 <b>12/03</b></span></div>
+        <div class="top"><span class="badge">B4</span><span class="who">问卷全流程＋访谈统筹</span></div>
+        <p class="job">问卷一人走到底：建卷 → 投满 80 份 → 清洗；兼催齐 6 份访谈并表</p>
+        <div class="row"><span>表7 + Q_原始 + Q_清洗 + 访谈总表</span></div>
+        <div class="row"><span>预计 <b>7.3h</b></span><span>12/01 发完卷｜截止 <b>12/06</b></span></div>
       </a>
       <a class="rcard" href="#b5">
         <div class="top"><span class="badge">B5</span><span class="who">政策＋数据</span></div>
@@ -525,16 +533,16 @@ footer p{margin:0 0 6px}
         <div class="row"><span>预计 <b>8.5h</b></span><span>12/03 政策｜截止 <b>12/06</b></span></div>
       </a>
       <a class="rcard" href="#b6">
-        <div class="top"><span class="badge">B6</span><span class="who">评论原话＋清洗</span></div>
-        <p class="job">评论原话 20 条 ＋ 访谈统筹 ＋ 问卷清洗 ＋ 打码</p>
-        <div class="row"><span>表8 20 条 + C 号原图／打码图各 20 + 访谈总表 + Q_清洗</span></div>
-        <div class="row"><span>预计 <b>7.6h</b></span><span>12/05 原话｜截止 <b>12/06</b></span></div>
+        <div class="top"><span class="badge">B6</span><span class="who">对照批账号＋评论原话</span></div>
+        <p class="job">细看对照批 6 个账号（3 官方媒体＋3 外地博主）＋ 评论原话 20 条并打码</p>
+        <div class="row"><span>表1B／表2／表3 ×6 + 截帧 36 + 表8 20 条 + C 号两套图</span></div>
+        <div class="row"><span>预计 <b>7.0h</b></span><span>12/03 细看｜截止 <b>12/06</b></span></div>
       </a>
     </div>
 
     <div class="callout">每人另外都要做一件事：<b>访 1 个人</b>（见「全员任务」）。12 个岗 12 份访谈，A 组 T01–T06、B 组 T07–T12。</div>
-    <div class="callout">需要两个人配合去重的活，<b>每组各两处、每处只两人，第三个人不要插手</b>：A 组平台普查（<span class="peer">A1 同学</span>↔<span class="peer">A2 同学</span>）、问卷（<span class="peer">A4 同学</span>↔<span class="peer">A6 同学</span>）；B 组视频抽样（<span class="peer">B1 同学</span>↔<span class="peer">B2 同学</span>）、问卷（<span class="peer">B4 同学</span>↔<span class="peer">B6 同学</span>）。你的合作对象是谁，写在你那张卡开头。</div>
-    <div class="callout"><b>12 个岗的活我都按单价算过</b>：最重 8.5h（<span class="peer">A5／B5 同学</span>做政策数据）、最轻 7.0h（<span class="peer">A3／A4／B3／B4 同学</span>），差 1.5h。写出来不是吓人——是为了让报名的人知道自己要投多少时间，别报完才发现扛不住。</div>
+    <div class="callout">需要两个人配合、又必须一把尺子的活有三处，<b>每处只两人，第三个人不要插手</b>：A 组平台普查（<span class="peer">A1 同学</span>↔<span class="peer">A2 同学</span>）、问卷（<span class="peer">A4 同学</span>↔<span class="peer">A6 同学</span>）、B 组视频抽样（<span class="peer">B1 同学</span>↔<span class="peer">B2 同学</span>）。B 组另外两处反过来：<b>问卷从建卷到清洗全归 <span class="peer">B4 同学</span>一个人</b>，不在"这份算不算有效"上扯皮；<b>12 个账号分两批看</b>（<span class="peer">B3 同学</span>看 ③⑤ 类、<span class="peer">B6 同学</span>看对照批），但口径由 <span class="peer">B3 同学</span>定、<span class="peer">B6 同学</span>照做。你的合作对象是谁，写在你那张卡开头。</div>
+    <div class="callout"><b>12 个岗的活我都按单价算过</b>：最重 8.5h（<span class="peer">A5／B5 同学</span>做政策数据）、最轻 7.0h（<span class="peer">A3／A4／B6 同学</span>），差 1.5h。写出来不是吓人——是为了让报名的人知道自己要投多少时间，别报完才发现扛不住。</div>
   </section>
 
   <!-- ============ 两个题目怎么选 ============ -->
@@ -571,10 +579,10 @@ footer p{margin:0 0 6px}
         <tbody>
           <tr><td data-label="你会什么">会搜东西、会归档文件、能每天交一点</td><td data-label="适合报"><b>A1</b>／<b>B1</b></td><td data-label="为什么">普查和抽样是全组的源头，先交一次别人才能开工，所以要"每天都动一点"的人</td></tr>
           <tr><td data-label="你会什么">会做演示页面（可借助 AI）／会剪短视频</td><td data-label="适合报"><b>A2</b>／<b>B2</b></td><td data-label="为什么">这两个岗要"评自己做的东西"，还得写 800 字说清当时怎么想的</td></tr>
-          <tr><td data-label="你会什么">会拍照、会拼图／修图</td><td data-label="适合报"><b>A3</b>／<b>B3</b></td><td data-label="为什么">要跑一趟现场拍 8 张，再拼 2 张对照图；全组的"画面"一半出自这里</td></tr>
-          <tr><td data-label="你会什么">微信里人缘好、催得动人</td><td data-label="适合报"><b>A4</b>／<b>B4</b></td><td data-label="为什么">问卷要凑满 80 份，脸皮薄催不动；建卷本身不难</td></tr>
+          <tr><td data-label="你会什么">会拍照、会拼图／修图</td><td data-label="适合报"><b>A3</b>／<b>B3</b></td><td data-label="为什么">要跑一趟现场拍 8 张，再拼 2 张对照图；全组的"画面"一半出自这里。<b>B3 还要定 12 个账号的判断口径</b>，得会看门道</td></tr>
+          <tr><td data-label="你会什么">微信里人缘好、催得动人</td><td data-label="适合报"><b>A4</b>／<b>B4</b></td><td data-label="为什么">问卷要凑满 80 份，脸皮薄催不动；建卷本身不难。<b>B4 是从建卷到清洗一个人走到底</b>，还要催齐 6 份访谈</td></tr>
           <tr><td data-label="你会什么">会用政府网、统计年鉴，坐得住</td><td data-label="适合报"><b>A5</b>／<b>B5</b></td><td data-label="为什么">一页页翻文件、扒数据，最枯燥也最硬；不用跑现场</td></tr>
-          <tr><td data-label="你会什么">常刷抖音小红书、Excel 会删重</td><td data-label="适合报"><b>A6</b>／<b>B6</b></td><td data-label="为什么">要收原话、判断哪条能引用，还要把问卷脏数据洗掉</td></tr>
+          <tr><td data-label="你会什么">常刷抖音小红书、Excel 会删重</td><td data-label="适合报"><b>A6</b>／<b>B6</b></td><td data-label="为什么">要收原话、判断哪条能引用；<b>A6 还要把问卷脏数据洗掉</b>，<b>B6 要对照官方／外地账号、给 20 张截图打码</b></td></tr>
         </tbody>
       </table>
     </div>
@@ -613,10 +621,10 @@ footer p{margin:0 0 6px}
             <tr><td data-label="岗"><b>A6</b></td><td data-label="干什么">收 20 条原话，统筹访谈，清洗问卷</td><td data-label="预计">7.6h</td><td data-label="手艺">会刷小红书、会 Excel 删重</td><td data-label="想清楚">手上活最碎，一件不能漏</td></tr>
             <tr><td data-label="岗"><b>B1</b></td><td data-label="干什么">抽 30 条短视频，管全组截帧</td><td data-label="预计">7.3h</td><td data-label="手艺">会刷抖音、会建档</td><td data-label="想清楚">11/30 前最忙，全组等你</td></tr>
             <tr><td data-label="岗"><b>B2</b></td><td data-label="干什么">再抽 30 条，评自己剪的那两条</td><td data-label="预计">8.0h</td><td data-label="手艺">同上，且会剪视频</td><td data-label="想清楚">要交自己剪的两条，不会剪别报</td></tr>
-            <tr><td data-label="岗"><b>B3</b></td><td data-label="干什么">细看 6 个账号，去视频里的地点拍对照</td><td data-label="预计">7.0h</td><td data-label="手艺">会看门道、会拍照</td><td data-label="想清楚">要跑一趟现场</td></tr>
-            <tr><td data-label="岗"><b>B4</b></td><td data-label="干什么">再细看 6 个账号，建问卷催到 80 份</td><td data-label="预计">7.0h</td><td data-label="手艺">细心、微信里人缘好</td><td data-label="想清楚">要催人填卷</td></tr>
+            <tr><td data-label="岗"><b>B3</b></td><td data-label="干什么">细看 ③⑤ 类 6 个账号＋现场拍对照，并定 12 个账号的口径</td><td data-label="预计">7.3h</td><td data-label="手艺">会看门道、会拍照</td><td data-label="想清楚">要跑一趟现场；口径由你出</td></tr>
+            <tr><td data-label="岗"><b>B4</b></td><td data-label="干什么">问卷建卷→投满 80 份→清洗，一人走到底；兼催 6 份访谈</td><td data-label="预计">7.3h</td><td data-label="手艺">细心、微信里人缘好、会 Excel</td><td data-label="想清楚">没人搭手，卷要自己催</td></tr>
             <tr><td data-label="岗"><b>B5</b></td><td data-label="干什么">摘 6 条政策，收 12 个官方数据（短视频口径）</td><td data-label="预计">8.5h</td><td data-label="手艺">会用政府网、统计年鉴</td><td data-label="想清楚">12 个岗里最重的两个之一</td></tr>
-            <tr><td data-label="岗"><b>B6</b></td><td data-label="干什么">收 20 条评论原话，统筹访谈，清洗问卷</td><td data-label="预计">7.6h</td><td data-label="手艺">会刷评论区、会 Excel 删重</td><td data-label="想清楚">手上活最碎</td></tr>
+            <tr><td data-label="岗"><b>B6</b></td><td data-label="干什么">细看对照批 6 个账号＋收 20 条评论原话并打码</td><td data-label="预计">7.0h</td><td data-label="手艺">会刷评论区、会打码</td><td data-label="想清楚">手上活最碎，一件不能漏</td></tr>
           </tbody>
         </table>
       </div>
@@ -624,7 +632,7 @@ footer p{margin:0 0 6px}
       <h4>怎么报</h4>
       <ol class="steps">
         <li><b>11/27 中午 12:00 前</b>私聊老师（不要在群里刷屏），照这个格式发一条：<code>第一志愿 A3，第二志愿 B1。理由：我会用 PS，家离小公园十分钟。</code></li>
-        <li><b>一个主岗，必要时兼一个</b>：报一个主岗做到底；缺人时可能被问"能不能再搭一个"，答不答都行，答了就按两个岗的预计工时加起来算时间（例：<b><span class="peer">A1 同学</span> 7.3h ＋ <span class="peer">B6 同学</span> 7.6h</b>）。</li>
+        <li><b>一个主岗，必要时兼一个</b>：报一个主岗做到底；缺人时可能被问"能不能再搭一个"，答不答都行，答了就按两个岗的预计工时加起来算时间（例：<b><span class="peer">A1 同学</span> 7.3h ＋ <span class="peer">B6 同学</span> 7.0h</b>）。</li>
         <li><b>两个志愿最好一 A 一 B</b>：万一某个组报爆了，还能换组不换兴趣。</li>
         <li>同一个岗报的人多，比两样：<b>干过类似的活</b>（课程作业、以前参赛、自己的作品）＞ 报得早。老师 11/27 晚在群里公布<b>定人表（组—岗—姓名—T 号）</b>。</li>
         <li>没人报的岗，老师按第二志愿调剂，<b>调剂前会先问一句</b>，不会硬塞。</li>
@@ -668,7 +676,7 @@ footer p{margin:0 0 6px}
         <span class="dl-ico">卷</span>
         <span class="dl-body">
           <b>受众问卷 B（16 题）</b>
-          <em>问"刷到过什么、怎么判断这是潮汕"。<b>建卷用</b>（含卷首语、题目、设置项），不是给受访者填的那一份。目标 80 份（<span class="peer">B4 同学</span>＋<span class="peer">B6 同学</span>合计，同一条链接）。</em>
+          <em>问"刷到过什么、怎么判断这是潮汕"。<b>建卷用</b>（含卷首语、题目、设置项），不是给受访者填的那一份。目标 80 份（<span class="peer">B4 同学</span>一人从建卷盯到清洗）。</em>
         </span>
         <span class="dl-btn">打开网页版</span>
       </a>
@@ -1038,7 +1046,7 @@ footer p{margin:0 0 6px}
       <p class="pos"><b>这个岗的定位</b>两件事：① 按统一口径把"潮汕非遗短视频"一条一条抽出来、逐条登记——报告里"我们看了 60 条、其中 X 条根本没说是潮汕哪里"那句话，一半依据是你这 30 行；② 收齐全组截帧，裁齐、按编号改名、标注清楚。</p>
       <p class="partner"><b>合作对象：<span class="peer">B2 同学</span>（只有他一个）</b>——抽样就你们两个人做，号段不重叠（你 V01–V30，他 V31–V60）。每天收工把新号发他，他开工先看你交的。<b>第三个人不要插手这件事</b>，人一多就对不清号。</p>
 
-      <div class="callout"><b>你交得越早，全组越早开工</b>：<span class="peer">B3、B4 同学</span>要细看的那 12 个账号，就是从这张表里按「发布者类型」挑出来的。<b>11/30 晚你和 <span class="peer">B2 同学</span>合计必须交够 30 条</b>（你 18 条、他 12 条），他们 12/01 才动得了手。12/06 前补满 30 条、两人合 60 条。</div>
+      <div class="callout"><b>你交得越早，全组越早开工</b>：<span class="peer">B3、B6 同学</span>要细看的那 12 个账号，就是从这张表里按「发布者类型」挑出来的。<b>11/30 晚你和 <span class="peer">B2 同学</span>合计必须交够 30 条</b>（你 18 条、他 12 条），他们 12/01 才动得了手。12/06 前补满 30 条、两人合 60 条。</div>
 
       <h4>你要交的材料</h4>
       <div class="tbl-wrap">
@@ -1056,15 +1064,15 @@ footer p{margin:0 0 6px}
       <ol class="steps">
         <li>平台四个都去：<b>抖音、小红书、B 站、视频号</b>。每个平台搜 英歌舞｜潮州木雕｜潮绣｜侨批｜潮剧｜工夫茶｜嵌瓷｜潮汕 非遗，"最多点赞"和"最新"各翻两屏。</li>
         <li>一行一条，12 项照表头填：<b>账号名｜视频链接｜发布者类型｜发布日期｜点赞量｜有没有说地点（写了哪个）｜有没有潮汕话｜有没有讲解或字幕｜有没有标传承人｜画面里出现哪些潮汕元素｜一句话说明｜采集人＋日期</b>。<b>不自己加列、不删列、不改列名。</b></li>
-        <li>「发布者类型」只有六个答案，<b>这列是全组的命门</b>：① 官方机构 ② 媒体 ③ 非遗传承人／工作室 ④ 本地商家 ⑤ 个人博主 ⑥ 外地博主。<span class="peer">B3 同学</span>按 ③⑤ 挑、<span class="peer">B4 同学</span>按 ①②⑥ 挑做对照——你填错一个，他们认领错一个。</li>
-        <li><b>同一账号最多收 5 条</b>，30 条至少要覆盖 15 个账号（不然 <span class="peer">B3、B4 同学</span>那 12 个账号不够挑）。</li>
+        <li>「发布者类型」只有六个答案，<b>这列是全组的命门</b>：① 官方机构 ② 媒体 ③ 非遗传承人／工作室 ④ 本地商家 ⑤ 个人博主 ⑥ 外地博主。<span class="peer">B3 同学</span>按 ③⑤ 挑、<span class="peer">B6 同学</span>按 ①②⑥ 挑做对照——你填错一个，他们认领错一个。</li>
+        <li><b>同一账号最多收 5 条</b>，30 条至少要覆盖 15 个账号（不然 <span class="peer">B3、B6 同学</span>那 12 个账号不够挑）。</li>
         <li><b>30 条里至少 8 条要有"疑点"</b>：地点对不上、外地画面冒充潮汕、一句潮汕话没有却标着潮汕、把"潮汕"当滤镜用。疑点条比正常条更有用，别为了整齐全挑标准的。</li>
         <li>编号自己用 V01–V30，不重号、不跳号。交之前自查：链接点得开、同一账号没重复凑数、疑似搬运的在"一句话说明"里标一句。</li>
       </ol>
 
       <h4>第二件：全组截帧统一处理（12/03 起陆续收）</h4>
       <ol class="steps">
-        <li>等 <span class="peer">B3、B4 同学</span> 12/03 交完 72 张、<span class="peer">B5、B6 同学</span> 12/05 交完，一次收齐，按<b>前缀 V／Z／D／C／PH</b> 分五个文件夹放。</li>
+        <li>等 <span class="peer">B3、B6 同学</span> 12/03 交完 72 张截帧、<span class="peer">B6 同学</span> 12/05 交完 20 张 C 号、<span class="peer">B5 同学</span> 12/06 交完 12 张 D 号，一次收齐，按<b>前缀 V／Z／D／C／PH</b> 分五个文件夹放。</li>
         <li>统一规格：只留视频画面（砍掉点赞栏、推荐栏），横竖方向统一，按 <code>V07_第三秒_地点标识</code> 这种改名。</li>
         <li>每张在文件名里保留"内容"那一段，报告插图按文件名就能找到。<b>露了真名的打码——C 号那 20 张不归你，<span class="peer">B6 同学</span>做。</b></li>
         <li>交付前自查：五个文件夹数量对得上、没有 <code>IMG_2384.jpg</code>、没有整块黑屏的帧。</li>
@@ -1083,7 +1091,7 @@ footer p{margin:0 0 6px}
       <p class="pos"><b>这个岗的定位</b>两件事：① 换个角度再抽 30 条（V31–V60）；② 你自己剪的那两条潮汕题材短视频（V61、V62）不拿来展示，<b>当被测对象，用同一把尺子量它</b>，再写 800 字说清"我剪的时候为什么也把它剪成了这样"。这个岗要求你会剪视频、那两条确实是你剪的。</p>
       <p class="partner"><b>合作对象：<span class="peer">B1 同学</span>（只有他一个）</b>——抽样就你们两个人做，号段不重叠（他 V01–V30，你 V31–V60）。每天开工先看他交的，撞上的跳过，新号每天回发他。<b>第三个人不要插手这件事</b>。</p>
 
-      <div class="callout"><b>11/30 那批里要有你 12 条</b>：<span class="peer">B3、B4 同学</span> 12/01 就要开看，靠的就是你和 <span class="peer">B1 同学</span> 11/30 晚合计交的 30 条。<b>11/26–11/30 这 5 天别闲着</b>：先做表10 自评的第一份（V61），12/04 前两份都交掉，别和抽样挤在最后一周。</div>
+      <div class="callout"><b>11/30 那批里要有你 12 条</b>：<span class="peer">B3、B6 同学</span> 12/01 就要开看，靠的就是你和 <span class="peer">B1 同学</span> 11/30 晚合计交的 30 条。<b>11/26–11/30 这 5 天别闲着</b>：先做表10 自评的第一份（V61），12/04 前两份都交掉，别和抽样挤在最后一周。</div>
 
       <h4>你要交的材料</h4>
       <div class="tbl-wrap">
@@ -1122,24 +1130,25 @@ footer p{margin:0 0 6px}
     <article class="role" id="b3">
       <div class="role-head">
         <span class="badge">B3</span>
-        <h3>账号细看<span class="sep">·</span>6 个 × 5 条 ＋ 现场对照拍摄</h3>
-        <div class="chips"><span class="chip hrs">预计 7.0h</span><span class="chip date">12/03 细看</span><span class="chip date">12/06 交齐</span></div>
+        <h3>账号细看<span class="sep">·</span>③⑤ 类 6 个 × 5 条 ＋ 现场对照拍摄</h3>
+        <div class="chips"><span class="chip hrs">预计 7.3h</span><span class="chip date">12/03 细看</span><span class="chip date">12/06 交齐</span></div>
       </div>
-      <p class="pos"><b>这个岗的定位</b>两件事：① 从抽样表里挑 6 个账号，每个看 5 条，回答"这个账号在讲潮汕，还是在用潮汕"；② 挑 3 个视频里明确出现的地点，去现场拍同角度，拼 2 张"视频里的潮汕 ↔ 现场的潮汕"对照图。B 组最出画面的部分在你这。</p>
+      <p class="pos"><b>这个岗的定位</b>两件事，外加一个"定标准"的责任：① 从抽样表里挑 <b>③ 非遗传承人／工作室、⑤ 个人博主</b> 两类，共 6 个账号，每个看 5 条，回答"这个账号在讲潮汕，还是在用潮汕"；② 挑 3 个视频里明确出现的地点，去现场拍同角度，拼 2 张"视频里的潮汕 ↔ 现场的潮汕"对照图。<b>12 个账号的判断口径由你统一</b>——<span class="peer">B6 同学</span>看的对照批照你这套来，两批数据最后要放在一张图里比。</p>
 
-      <div class="callout"><b>细看哪 6 个不用你找，但要等第一批抽样表</b>：<span class="peer">B1、B2 同学</span> <b>11/30 晚合计交 30 条</b>，你从表1 里按「发布者类型」挑 <b>③ 非遗传承人／工作室、⑤ 个人博主</b>，只挑"有内容可看"的，凑 6 个账号（每个账号至少 5 条在表里），<b>账号清单发群里</b>（防撞、留痕），12/01 开看、12/03 交齐。<b>11/26–11/30 这 5 天不空等</b>：先拿 1 个明显规范的账号把 6 张截帧和五项判断试填一遍（11/27 会上过口径），再跑一趟现场把 8 张拍掉。</div>
+      <div class="callout"><b>细看哪 6 个不用你找，但要等第一批抽样表</b>：<span class="peer">B1、B2 同学</span> <b>11/30 晚合计交 30 条</b>，你从表1 里按「发布者类型」挑 <b>③ 非遗传承人／工作室、⑤ 个人博主</b>，只挑"有内容可看"的，凑 6 个账号（每个账号至少 5 条在表里），<b>账号清单发群里</b>（防撞、留痕）；<b>同时把口径写成三句话发群</b>——三问怎么记、五项判断怎么打分、一句判断怎么写，<span class="peer">B6 同学</span>照这个做。12/01 开看、12/03 交齐。<b>11/26–11/30 这 5 天不空等</b>：先拿 1 个明显规范的账号把 6 张截帧和五项判断试填一遍（11/27 会上过口径），再把口径发出去，然后跑一趟现场把 8 张拍掉。</div>
 
       <h4>你要交的材料</h4>
       <div class="tbl-wrap">
         <table class="resp">
           <thead><tr><th>#</th><th>材料</th><th>数量</th><th>交件日</th></tr></thead>
           <tbody>
-            <tr><td class="n">1</td><td data-label="材料">表1B 账号细看</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">12/02 交 4 个，12/03 交齐</td></tr>
-            <tr><td class="n">2</td><td data-label="材料">表2 三问（V1 找得到／V2 看得完／V3 找得到出处）</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">同上</td></tr>
-            <tr><td class="n">3</td><td data-label="材料">表3 五项判断</td><td class="qty" data-label="数量">6 份</td><td class="due" data-label="交件日">同上</td></tr>
+            <tr><td class="n">1</td><td data-label="材料">表1B 账号细看（③⑤ 类，第 1–6 行）</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">12/02 交 4 个，12/03 交齐</td></tr>
+            <tr><td class="n">2</td><td data-label="材料">表2 三问（V1 找得到／V2 看得完／V3 找得到出处，前 18 行）</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">同上</td></tr>
+            <tr><td class="n">3</td><td data-label="材料">表3 五项判断（第 1–6 行）</td><td class="qty" data-label="数量">6 份</td><td class="due" data-label="交件日">同上</td></tr>
             <tr><td class="n">4</td><td data-label="材料">截帧（每账号 6 张，用该账号的 V 号）</td><td class="qty" data-label="数量">36 张</td><td class="due" data-label="交件日">12/03</td></tr>
             <tr><td class="n">5</td><td data-label="材料">现场实拍 <b>PH01–PH08</b>（原图，不修不裁）</td><td class="qty" data-label="数量">8 张</td><td class="due" data-label="交件日">12/05</td></tr>
             <tr><td class="n">6</td><td data-label="材料">对照拼图 <b>PH09、PH10</b>（左视频截帧／右现场同角度，带标注）</td><td class="qty" data-label="数量">2 张</td><td class="due" data-label="交件日">12/06</td></tr>
+            <tr><td class="n">7</td><td data-label="材料">判断口径三句话（发群里，<span class="peer">B6 同学</span>照此执行）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">11/28 前</td></tr>
           </tbody>
         </table>
       </div>
@@ -1170,44 +1179,52 @@ footer p{margin:0 0 6px}
     <article class="role" id="b4">
       <div class="role-head">
         <span class="badge">B4</span>
-        <h3>账号细看<span class="sep">·</span>6 个（对照批）＋ 问卷建卷与投放</h3>
-        <div class="chips"><span class="chip hrs">预计 7.0h</span><span class="chip date">12/03 交齐</span></div>
+        <h3>问卷全流程<span class="sep">·</span>建卷 → 投满 80 份 → 清洗 ＋ 访谈统筹</h3>
+        <div class="chips"><span class="chip hrs">预计 7.3h</span><span class="chip date">12/01 发完卷</span><span class="chip date">12/06 交齐</span></div>
       </div>
-      <p class="pos"><b>这个岗的定位</b>两件事：① 再细看 6 个账号，但这一批<b>专门做对照</b>——3 个官方／媒体号 + 3 个外地博主号，看"官方讲得准不准、外地讲得像不像"；② 问卷你管建卷（含防重复设置）和投放催收，<span class="peer">B6 同学</span>帮你发次渠道、负责清洗。你俩共用一个链接、只看合计 80 份。</p>
-      <p class="partner"><b>合作对象：<span class="peer">B6 同学</span>（只有这一个）</b>——问卷这条线就你们两个人：你建卷、发班群／社团群／私聊，他发老乡群／家人群／朋友圈并做清洗，同一条链接、只看合计 80 份。<b>第三个人不要插手</b>。</p>
+      <p class="pos"><b>这个岗的定位</b>把问卷<b>从建卷到清洗一个人走到底</b>：建卷 → 投放攒到 80 份 → 清洗导出。为什么不让两个人分？——一份卷算不算有效、哪几份要删，全在你一个人手上，不必跟另一个人争"这份到底算不算"。另外还兼<b>访谈统筹</b>：催齐全组 6 份访谈，并成一张总表。</p>
+      <p class="partner"><b>合作对象：无</b>——问卷这条线由你一个人走到底，<span class="peer">B6 同学</span>不再碰问卷（他做对照批账号和评论原话）。<b>中间不换手，也别让别人插进来帮你"顺手看看"。</b></p>
 
-      <div class="callout"><b>两件事节奏不一样</b>：问卷<b>不用等任何人</b>，11/26 就能建卷、11/27 会上定话术、12/01 前发完，越早发越早攒满。<b>细看要等抽样表</b>：11/30 晚到手 30 条，你按「发布者类型」挑 <b>① 官方机构、② 媒体、⑥ 外地博主</b>，凑 6 个账号，12/01 开看、12/03 交齐。</div>
+      <div class="callout"><b>问卷不用等任何人，越早越好</b>：11/26 就能建卷、11/27 会上定话术、<b>12/01 前发完</b>，越早发越早攒满。<b>访谈统筹按天推</b>：11/28 点一次名，11/29–12/01 每天问一句进度，12/06 前并表交齐。</div>
 
       <h4>你要交的材料</h4>
       <div class="tbl-wrap">
         <table class="resp">
           <thead><tr><th>#</th><th>材料</th><th>数量</th><th>交件日</th></tr></thead>
           <tbody>
-            <tr><td class="n">1</td><td data-label="材料">表1B 账号细看（对照批）</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">12/02 交 4 个，12/03 交齐</td></tr>
-            <tr><td class="n">2</td><td data-label="材料">表2 三问（V 脚本）</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">同上</td></tr>
-            <tr><td class="n">3</td><td data-label="材料">表3 五项判断</td><td class="qty" data-label="数量">6 份</td><td class="due" data-label="交件日">同上</td></tr>
-            <tr><td class="n">4</td><td data-label="材料">截帧（每账号 6 张）</td><td class="qty" data-label="数量">36 张</td><td class="due" data-label="交件日">12/03</td></tr>
-            <tr><td class="n">5</td><td data-label="材料">问卷链接（建卷时开好两项防重复）+ 表7 投放记录</td><td class="qty" data-label="数量">1 个 + 1 份</td><td class="due" data-label="交件日">12/01 前发完，边发边记</td></tr>
-            <tr><td class="n">6</td><td data-label="材料">问卷原始数据 <b>Q_原始_日期</b>（原样导出，不动）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">12/02</td></tr>
+            <tr><td class="n">1</td><td data-label="材料">问卷链接（建卷时开好两项防重复）+ 设置截图</td><td class="qty" data-label="数量">1 个 + 1 张</td><td class="due" data-label="交件日">12/01 前发完</td></tr>
+            <tr><td class="n">2</td><td data-label="材料">表7 问卷投放 + 表7 问卷清洗（两段都归你）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">投放边发边记，12/02 交</td></tr>
+            <tr><td class="n">3</td><td data-label="材料">问卷原始数据 <b>Q_原始_日期</b>（原样导出，不动）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">12/02</td></tr>
+            <tr><td class="n">4</td><td data-label="材料">清洗后数据 <b>Q_清洗_日期</b>（写明删了几份、为什么）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">12/03</td></tr>
+            <tr><td class="n">5</td><td data-label="材料">访谈总表（6 份并成一张，标出能直接引用的句子）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">12/06</td></tr>
           </tbody>
         </table>
       </div>
 
-      <h4>第一件：账号细看（对照批，6 个）</h4>
-      <ol class="steps">
-        <li>同一套三问（V1 找得到／V2 看得完／V3 找得到出处）、五项判断、6 张截帧、一句判断——<b>口径和 <span class="peer">B3 同学</span>完全一样</b>，这样两组数据才能放在一张图里比。</li>
-        <li><b>对照怎么做</b>：官方／媒体号重点看"地点信息准不准、传承人名字有没有、有没有把不同非遗混着说"；外地博主号重点看"画面是不是真的潮汕、文案里的潮汕元素对不对、有没有把闽南／客家／台湾的画面当潮汕"。</li>
-        <li>发现冒充、错标、张冠李戴，<b>单独记一笔</b>（属于哪个账号、哪条视频、错在哪），这是 B 组最硬的证据。</li>
-        <li>每账号写一句判断，不许写"无问题"。</li>
-      </ol>
-
-      <h4>第二件：问卷建卷与投放（80 份）</h4>
+      <h4>第一件：建卷与投放（攒到 80 份）</h4>
       <ol class="steps">
         <li>先看 <a href="files/受众问卷B_16题.html" target="_blank" rel="noopener"><b>受众问卷 B（16 题）</b></a>，照它在腾讯问卷或问卷星里建卷。<b>发卷时间你自己定</b>，找个自己方便盯的时间发。</li>
         <li><b>建卷时必开两项防重复</b>（这一步不能省，评委要看）：① 同一微信／同一账号只能填一次；② 最短答题时间 90 秒。设置截图自己留一张，写方法章时要用。</li>
-        <li>你发<b>班群、社团群、私聊</b>；<span class="peer">B6 同学</span>发<b>老乡群、家人群、朋友圈</b>。<b>同一个群只发一次</b>，两人别都发。</li>
-        <li><b>只看合计数</b>：两人加起来到 <b>80 份</b>就停。12/01 晚看数，合计到 60 就够写；差得多早点说。</li>
-        <li>12/02 从后台<b>原样导出</b>一份（不改任何一行），交 <code>Q_原始_日期.xlsx</code> 给 <span class="peer">B6 同学</span>清洗；表7 按渠道分行记"发到哪些群"，<b>"收回数"只填合计一行</b>。</li>
+        <li><b>渠道全部由你自己发</b>：班群、社团群、老乡群、家人群、朋友圈、私聊都算。<b>同一个群只发一次</b>，别重复刷屏惹人烦；每发一处就在表7 记一行。</li>
+        <li><b>要主动催，不要发完就等</b>：11/28、11/30 各催一轮，私下点对点问比群里喊管用。</li>
+        <li><b>看合计数</b>：到 <b>80 份</b>就停；12/01 晚看数，到 60 份就够写，差得多早点说。</li>
+        <li>12/02 从后台<b>原样导出</b>一份（不改任何一行），存成 <code>Q_原始_日期.xlsx</code>；表7 按渠道分行记"发到哪些群"，<b>"收回数"只填合计一行</b>。</li>
+      </ol>
+
+      <h4>第二件：清洗（只有你一个人经手）</h4>
+      <ol class="steps">
+        <li>把 <code>Q_原始_日期.xlsx</code> <b>另存一份</b>再改，原始文件一个字都不动。</li>
+        <li>删无效卷四条：<b>同一微信／同一 IP 重复填的只留最早一份</b>；答题 &lt;90 秒；全选同一项；开放题空白过半。</li>
+        <li>交 <code>Q_清洗_日期.xlsx</code> 时<b>写明删了几份、为什么删</b>——这句话老师写方法章直接用，别省。</li>
+        <li>因为你既是建卷人又是清洗人，<b>删卷的规矩要在建卷当天就定死</b>，别等看到数据再改标准。</li>
+      </ol>
+
+      <h4>第三件：访谈统筹（6 份并成一张总表）</h4>
+      <ol class="steps">
+        <li>11/28 在群里点一次名：谁访哪一类（见「全员任务」的表），<b>6 份访谈一人一份，别撞</b>。</li>
+        <li>11/29–12/01 每天问一句进度，谁没做就催。<b>你的活是让 6 份都交上来</b>，不是替他们做。</li>
+        <li>收齐后用工具包里的 <b>表11 访谈总表</b>并表（T 号、岗号已印好，只抄关键句和「可引用 √」），<b>标出能直接引用的 6–8 句</b>。</li>
+        <li>表里不许出现受访人真名，一律写"某位本地居民""一位外地游客"。</li>
       </ol>
 
       <p class="also"><b>还有一件两组每个人都要做的事</b>：访 1 个人（10 分钟，微信语音），用 <b>T10</b> 访谈表记，<b>问 B 组那 8 问</b>，访完当天填。访谁、怎么开口，见「<a href="#all">全员任务</a>」。</p>
@@ -1262,11 +1279,11 @@ footer p{margin:0 0 6px}
     <article class="role" id="b6">
       <div class="role-head">
         <span class="badge">B6</span>
-        <h3>评论原话<span class="sep">·</span>20 条 ＋ 访谈统筹 ＋ 问卷清洗</h3>
-        <div class="chips"><span class="chip hrs">预计 7.6h</span><span class="chip date">12/05 原话</span><span class="chip date">12/06 交齐</span></div>
+        <h3>对照批账号<span class="sep">·</span>6 个 ＋ 评论原话 20 条并打码</h3>
+        <div class="chips"><span class="chip hrs">预计 7.0h</span><span class="chip date">12/03 细看</span><span class="chip date">12/06 交齐</span></div>
       </div>
-      <p class="pos"><b>这个岗的定位</b>三件事，都是"把散的收成整的"：① 收评论区的"人说的话"，报告里最扎心的 8–12 句从你这 20 条挑，<b>打码也归你</b>（原话和打码同一人，不倒手）；② 全组 6 份访谈你催齐并表；③ 问卷原始数据你清洗。</p>
-      <p class="partner"><b>合作对象：<span class="peer">B4 同学</span>（只有这一个）</b>——问卷这条线就你们两个人：他建卷、发班群／社团群／私聊，你发老乡群／家人群／朋友圈，收回来的原始数据他给你、你清洗。<b>第三个人不要插手</b>。</p>
+      <p class="pos"><b>这个岗的定位</b>两件事：① 细看<b>对照批 6 个账号</b>——3 个官方／媒体号 + 3 个外地博主号，看"官方讲得准不准、外地讲得像不像"；② 收评论区的"人说的话"20 条并打码，报告里最扎心的 8–12 句从你这 20 条挑。B 组最硬的证据——冒充、错标、张冠李戴——一半出在你这批账号上。</p>
+      <p class="partner"><b>口径跟 <span class="peer">B3 同学</span>对齐，但活各干各的</b>——12 个账号分两批：他看 ③⑤ 类（第 1–6 行），你看对照批（第 7–12 行）。三问怎么记、五项怎么打分、一句判断怎么写，<b>照他 11/28 发群里的那三句话做，不许自己另立一套</b>；否则两批数据没法放进一张图比。</p>
 
       <h4>你要交的材料</h4>
       <div class="tbl-wrap">
@@ -1276,8 +1293,9 @@ footer p{margin:0 0 6px}
             <tr><td class="n">1</td><td data-label="材料">表8 评论原话摘录（一字不改，含错别字）</td><td class="qty" data-label="数量">20 条</td><td class="due" data-label="交件日">11/30 交 10 条，12/05 交齐</td></tr>
             <tr><td class="n">2</td><td data-label="材料">评论截图 <b>C01–C20</b>：先交原图（不裁不改，存档核对用）</td><td class="qty" data-label="数量">20 张</td><td class="due" data-label="交件日">12/05</td></tr>
             <tr><td class="n">3</td><td data-label="材料">打码图（遮住用户名和头像）</td><td class="qty" data-label="数量">20 张</td><td class="due" data-label="交件日">12/06</td></tr>
-            <tr><td class="n">4</td><td data-label="材料">访谈总表（6 份并成一张，标出能引用的句子）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">12/06</td></tr>
-            <tr><td class="n">5</td><td data-label="材料">问卷清洗后数据 <b>Q_清洗_日期</b>（写明删了几份、为什么）</td><td class="qty" data-label="数量">1 份</td><td class="due" data-label="交件日">12/02</td></tr>
+            <tr><td class="n">4</td><td data-label="材料">表1B 账号细看（对照批，第 7–12 行）</td><td class="qty" data-label="数量">6 套</td><td class="due" data-label="交件日">12/02 交 4 个，12/03 交齐</td></tr>
+            <tr><td class="n">5</td><td data-label="材料">表2 三问（第 19–36 行）＋ 表3 五项判断（第 7–12 行）</td><td class="qty" data-label="数量">6 套 + 6 份</td><td class="due" data-label="交件日">12/03</td></tr>
+            <tr><td class="n">6</td><td data-label="材料">截帧（每账号 6 张，用该账号的 V 号）</td><td class="qty" data-label="数量">36 张</td><td class="due" data-label="交件日">12/03</td></tr>
           </tbody>
         </table>
       </div>
@@ -1308,19 +1326,13 @@ footer p{margin:0 0 6px}
         <li>打码：按 C 号逐张把用户名、头像遮掉。<b>要求：评论内容看得清，看不出是谁。</b>原图和打码图两套都交，别覆盖原图。</li>
       </ol>
 
-      <h4>第二件：访谈统筹（6 份并成一张总表）</h4>
+      <h4>第二件：对照批账号 6 个（12/01 开看，12/03 交齐）</h4>
       <ol class="steps">
-        <li>11/28 在群里点一次名：谁访哪一类（见「全员任务」的表），<b>6 份访谈一人一份，别撞</b>。</li>
-        <li>11/29–12/01 每天问一句进度，谁没做就催。<b>你的活是让 6 份都交上来</b>，不是替他们做。</li>
-        <li>收齐后并成一张总表：T 号／访的哪类人／8 个答案的关键句／"三句话判断"。<b>标出能直接引用的 6–8 句</b>。</li>
-        <li>表里不许出现受访人真名，一律写"某位本地居民""一位外地游客"。</li>
-      </ol>
-
-      <h4>第三件：问卷清洗</h4>
-      <ol class="steps">
-        <li>12/02 从 <span class="peer">B4 同学</span>那拿 <code>Q_原始_日期.xlsx</code>，<b>另存一份</b>再改，原始文件不动。</li>
-        <li>删无效卷四条：<b>同一微信／同一 IP 重复填的只留最早一份</b>；答题 &lt;90 秒；全选同一项；开放题空白过半。</li>
-        <li>交 <code>Q_清洗_日期.xlsx</code> 时<b>写明删了几份、为什么删</b>——这句话老师写方法章直接用，别省。</li>
+        <li><b>哪 6 个不用你找</b>：<span class="peer">B1、B2 同学</span> 11/30 晚会交 30 条抽样，你从表1 里按「发布者类型」挑 <b>① 官方机构、② 媒体、⑥ 外地博主</b> 三类，凑 6 个账号（每个账号至少 5 条在表里），<b>账号清单发群里</b>防撞留痕。<b>第 7–12 行</b>就是你的。</li>
+        <li><b>口径照 <span class="peer">B3 同学</span>那三句话做</b>：三问（V1 找得到／V2 看得完／V3 找得到出处）、五项判断（1–5 分，5 秒内凭第一感觉）、一句判断。<b>不许改问法、不许改分值</b>——12 个账号要放在一张图里比，差一点就废了。</li>
+        <li><b>对照怎么做</b>：官方／媒体号重点看"地点信息准不准、传承人名字有没有、有没有把不同非遗混着说"；外地博主号重点看"画面是不是真的潮汕、文案里的潮汕元素对不对、有没有把闽南／客家／台湾的画面当潮汕"。</li>
+        <li>发现冒充、错标、张冠李戴，<b>单独记一笔</b>（属于哪个账号、哪条视频、错在哪），这是 B 组最硬的证据。</li>
+        <li>每账号截 6 张（封面｜前 3 秒｜出现地点标识那一帧｜说明或字幕｜评论区"这是哪"｜最可疑的一帧），每账号写一句判断，<b>不许写"无问题"</b>。</li>
       </ol>
 
       <p class="also"><b>还有一件两组每个人都要做的事</b>：访 1 个人（10 分钟，微信语音），用 <b>T12</b> 访谈表记，<b>问 B 组那 8 问</b>，访完当天填。访谁、怎么开口，见「<a href="#all">全员任务</a>」。</p>
@@ -1362,7 +1374,7 @@ footer p{margin:0 0 6px}
         <li>开口照念。A 组："我们在做一个挑战杯调研，关于潮汕文化的线上展览、VR 这些，想听你说几句真实想法，10 分钟，不记名字。"B 组："我们在做一个挑战杯调研，关于潮汕非遗的短视频，想听你说几句真实想法，10 分钟，不记名字。"</li>
         <li><b>A 组问 A 组那 8 问，B 组问 B 组那 8 问</b>（见下），顺序不改、不增不减。</li>
         <li>答完<b>当天</b>填你自己那份——到「下载材料」最下面找<b>带自己岗号</b>的那份（编号、组号都已经印好），先填上自己姓名，再填对象、时间、8 个答案和三句话。<b>一岗一份，别几个人合填一张。</b></li>
-        <li>存成 <code>访谈_T03_A3_日期.xlsx</code>（换成自己的号），发到 <a class="inline-link" href="mailto:ybpeng1286@stpt.edu.cn">ybpeng1286@stpt.edu.cn</a>，主题写 <code>T03_A3</code>。<b><span class="peer">A6、B6 同学</span>分别负责催齐本组 6 份，并成一张总表——用工具包里的 <b>表11 访谈总表</b>（T 号、岗号已印好，只抄关键句和「可引用 √」）。</b></li>
+        <li>存成 <code>访谈_T03_A3_日期.xlsx</code>（换成自己的号），发到 <a class="inline-link" href="mailto:ybpeng1286@stpt.edu.cn">ybpeng1286@stpt.edu.cn</a>，主题写 <code>T03_A3</code>。<b><span class="peer">A6、B4 同学</span>分别负责催齐本组 6 份，并成一张总表——用工具包里的 <b>表11 访谈总表</b>（T 号、岗号已印好，只抄关键句和「可引用 √」）。</b></li>
       </ol>
 
       <h4>A 组访谈 8 问（问"进不进得去"）</h4>
@@ -1413,13 +1425,13 @@ footer p{margin:0 0 6px}
               <tr><td data-label="前缀"><b>Z</b></td><td data-label="管什么">政策原文 + 原页截图</td><td data-label="谁用"><span class="peer">A5 同学</span> Z01–Z06｜<span class="peer">B5 同学</span> Z01–Z06（<b>两组同号段，靠组号区分</b>）</td></tr>
               <tr><td data-label="前缀"><b>D</b></td><td data-label="管什么">官方数据 + 来源截图</td><td data-label="谁用"><span class="peer">A5 同学</span> D01–D12｜<span class="peer">B5 同学</span> D01–D12（同上）</td></tr>
               <tr><td data-label="前缀"><b>C</b></td><td data-label="管什么">网友原话／评论原话 + 原图／打码图</td><td data-label="谁用"><span class="peer">A6 同学</span> C01–C20｜<span class="peer">B6 同学</span> C01–C20（同上）</td></tr>
-              <tr><td data-label="前缀"><b>Q</b></td><td data-label="管什么">问卷导出数据（原始卷／清洗后）</td><td data-label="谁用"><span class="peer">A4 同学</span>、<span class="peer">B4 同学</span>交 Q_原始｜<span class="peer">A6 同学</span>、<span class="peer">B6 同学</span>交 Q_清洗</td></tr>
+              <tr><td data-label="前缀"><b>Q</b></td><td data-label="管什么">问卷导出数据（原始卷／清洗后）</td><td data-label="谁用"><span class="peer">A4 同学</span>交 Q_原始｜<span class="peer">A6 同学</span>交 Q_清洗｜<span class="peer">B4 同学</span>两份都交（一人经手）</td></tr>
               <tr><td data-label="前缀"><b>T</b></td><td data-label="管什么">访谈记录（一岗一份）</td><td data-label="谁用">A 组 T01–T06｜B 组 T07–T12，表头已印好</td></tr>
               <tr><td data-label="前缀"><b>PH</b></td><td data-label="管什么">现场实拍 + 对照拼图</td><td data-label="谁用"><span class="peer">A3 同学</span> PH01–PH10｜<span class="peer">B3 同学</span> PH01–PH10（同上）</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="num-note"><span class="peer">A3、A4 同学</span>测的那 12 个平台不另编号，沿用它在表1 里的 P 号；<span class="peer">B3、B4 同学</span>细看的 12 个账号沿用 V 号。同一对象的多张截图共用一个号，靠"内容"那一段区分，例 <code>P07_S3无讲解</code>、<code>V12_前3秒</code>。<b>号段是分好的，不许串号、不许跳号、不许自己另起一套。</b>Z／D／C／PH 四个前缀两组都用，<b>文件名必须带组号</b>。</p>
+        <p class="num-note"><span class="peer">A3、A4 同学</span>测的那 12 个平台不另编号，沿用它在表1 里的 P 号；<span class="peer">B3、B6 同学</span>细看的 12 个账号沿用 V 号。同一对象的多张截图共用一个号，靠"内容"那一段区分，例 <code>P07_S3无讲解</code>、<code>V12_前3秒</code>。<b>号段是分好的，不许串号、不许跳号、不许自己另起一套。</b>Z／D／C／PH 四个前缀两组都用，<b>文件名必须带组号</b>。</p>
 
         <ol class="steps" style="counter-reset:s 2">
         <li><b>截图必须露来源</b>：A 组露网址栏，B 组露账号名与点赞数。不裁剪、不加水印、不美颜。</li>
@@ -1438,7 +1450,7 @@ footer p{margin:0 0 6px}
 <footer>
   <div class="wrap">
     <p>第十届"挑战杯"汕头职业技术学院学生课外学术科技作品竞赛 · 哲学社会科学类社会调查报告</p>
-    <p>配套表格：<b>采集表工具包_A组_可及性.xlsx</b>（A 组·可及性，只填自己那几张，别人的不要动）</p>
+    <p>配套表格：<b>采集表工具包_A组_可及性.xlsx</b>（A 组）｜<b>采集表工具包_B组_短视频.xlsx</b>（B 组）</p>
     <p>指导老师：胡泽川 ｜ 彭堉斌</p>
   </div>
 </footer>
