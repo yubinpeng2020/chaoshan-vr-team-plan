@@ -3,122 +3,271 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#134e4a">
+<meta name="theme-color" content="#8a3517">
 <title>受众问卷 B（16 题）｜潮汕非遗短视频观看与判断调查</title>
 <style>
-:root{--paper:#f7f5f0;--ink:#1c2521;--ink2:#4a5751;--ink3:#7b8781;--teal:#134e4a;--soft:#e3efec;--clay:#b4451f;--line:#dfdcd2}
+:root{--paper:#f7f5f0;--ink:#1c2521;--ink2:#4a5751;--ink3:#7b8781;--teal:#a8411c;--teal2:#8a3517;--soft:#fbeee8;--clay:#a8411c;--claysoft:#fbeee8;--line:#dfdcd2;--line2:#ecebe4}
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);line-height:1.78;
-  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-  font-size:16px;overflow-wrap:break-word}
-.top{background:linear-gradient(160deg,#134e4a,#0f3b38);color:#f4f1e9;padding:22px 0 18px}
+body{margin:0;background:var(--paper);color:var(--ink);line-height:1.78;font-size:16px;overflow-wrap:break-word;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif}
+.top{background:radial-gradient(120% 120% at 100% 0%,rgba(180,69,31,.55) 0,rgba(138,53,23,0) 55%),linear-gradient(160deg,#a8411c,#7d2f12);color:#fdf4ef;padding:24px 0 20px}
 .wrap{max-width:820px;margin:0 auto;padding:0 18px}
-.top .tag{font-size:12.5px;letter-spacing:.12em;color:#c7ded9}
-.top h1{font-size:20px;margin:6px 0 0;line-height:1.4}
-main{max-width:820px;margin:0 auto;padding:18px 18px 60px}
-h1,h2,h3{font-family:"Songti SC","STSong",serif;line-height:1.4}
-h2{font-size:19px;margin:30px 0 10px;padding-left:10px;border-left:3px solid var(--teal)}
-h3{font-size:16.5px;margin:22px 0 8px;color:var(--teal)}
-p{margin:10px 0;color:var(--ink2)}
+.top .tag{font-size:12.5px;letter-spacing:.12em;color:#f2cfc0}
+.top h1{font-family:"Songti SC","STSong",serif;font-size:22px;margin:8px 0 0;line-height:1.4;color:#fff}
+.top .sub{margin:6px 0 0;font-size:13.5px;color:#f2cfc0}
+main{max-width:820px;margin:0 auto;padding:18px 18px 40px}
+h2,h3{font-family:"Songti SC","STSong",serif;line-height:1.4}
+h2{font-size:19px;margin:32px 0 12px;padding-left:11px;border-left:3px solid var(--teal);display:flex;align-items:baseline;gap:8px}
+h2 .no{font-size:13.5px;font-weight:700;color:var(--teal2);letter-spacing:.06em;background:var(--soft);border-radius:5px;padding:1px 7px}
+h3{font-size:16px;margin:20px 0 4px;color:var(--teal2)}
+p{margin:9px 0;color:var(--ink2)}
 strong{color:var(--ink)}
-blockquote{margin:12px 0;padding:12px 14px;background:#fff;border-left:3px solid var(--teal);
-  border-radius:0 10px 10px 0;color:var(--ink2);font-size:15px}
-blockquote p{margin:6px 0}
-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14.5px;background:#fff;
-  border:1px solid var(--line);border-radius:10px;overflow:hidden}
-th,td{padding:8px 11px;border-bottom:1px solid #ecebe4;text-align:left;vertical-align:top}
-th{background:#f2f0e9;font-size:13px;color:var(--ink2)}
-tr:last-child td{border-bottom:none}
-ol,ul{padding-left:22px;color:var(--ink2)}
-li{margin:6px 0}
-hr{border:none;border-top:1px dashed var(--line);margin:26px 0}
+hr{border:none;border-top:1px dashed var(--line);margin:24px 0}
 code{background:#efece4;padding:1px 5px;border-radius:4px;font-size:13.5px}
+
+.warn{margin:16px 0 0;padding:11px 14px;background:#fbeee8;border:1px solid #efd6c9;border-radius:10px;color:#8a3517;font-size:14px}
+.warn b{color:#7a2d12}
+
+.meta{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 15px;margin:16px 0 0;font-size:14.5px}
+.meta p{margin:4px 0}
+.meta .k{color:var(--ink3);font-size:13px;margin-right:6px}
+.meta a{color:var(--teal2)}
+
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{padding:8px 11px;border-bottom:1px solid var(--line2);text-align:left;vertical-align:top}
+th{background:#f2f0e9;font-size:13px;color:var(--ink2);font-weight:700}
+tr:last-child td{border-bottom:none}
+
+.q{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 15px;margin:11px 0}
+.qh{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.qn{background:var(--teal);color:#fff;font-weight:800;font-size:12.5px;border-radius:5px;padding:1px 7px;letter-spacing:.02em}
+.qt{font-size:12.5px;color:var(--ink3)}
+.qs{margin:6px 0 2px;font-weight:700;color:var(--ink);font-size:15.5px}
+.opts{margin:7px 0 0;padding:0;list-style:none;font-size:15px}
+.opts li{position:relative;padding-left:19px;margin:3px 0;color:var(--ink2)}
+.opts li:before{content:"○";position:absolute;left:1px;top:0;color:#c9bcb4;font-size:13px}
+.opts.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0 14px}
+.note{margin:9px 0 0;padding:7px 11px;background:#fbfaf6;border-left:2px solid #d9d3c4;border-radius:0 7px 7px 0;font-size:13.5px;color:var(--ink3)}
+.note b{color:#8a6a2c}
+blockquote{margin:11px 0;padding:12px 15px;background:#fff;border-left:3px solid var(--teal);border-radius:0 10px 10px 0;color:var(--ink2);font-size:15px}
+blockquote p{margin:5px 0}
+ol,ul{padding-left:21px;color:var(--ink2)}
+li{margin:5px 0}
+
+footer.page{margin:34px 0 0;padding:16px 0 0;border-top:1px solid var(--line);font-size:13px;color:var(--ink3);text-align:center;line-height:1.9}
+footer.page a{color:var(--teal2)}
+
 @media (max-width:640px){
   body{font-size:15.5px}
-  table{font-size:14px}
+  table{font-size:13.5px}
   th,td{padding:7px 9px}
   h2{font-size:18px}
+  .top h1{font-size:20px}
+  .opts.cols{grid-template-columns:1fr}
 }
-@media print{.top{background:#fff;color:#000;border-bottom:1px solid #000}.top .tag{color:#333}}
+@media print{.top{background:#fff;color:#000;border-bottom:1px solid #000}.top .tag,.top .sub{color:#333}.top h1{color:#000}.warn{border:1px solid #999}}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <div class="tag">挑战杯 · B 组受众问卷（16 题，约 6 分钟）</div>
+  <div class="tag">挑战杯 · B 组受众问卷｜16 题 · 约 6 分钟</div>
   <h1>潮汕非遗短视频：你刷到什么、怎么判断</h1>
+  <div class="sub">《刷到的潮汕，还是潮汕吗？》配套 · 测"像不像潮汕"</div>
 </div></header>
+
 <main>
-<blockquote>
-<p>用途：《刷到的潮汕，还是潮汕吗？——潮汕非遗短视频的地方性表达与青年文化认同调查》配套受众端问卷</p>
-<p>目标样本：<strong>80 份有效卷</strong>（B4 同学＋B6 同学两人合计，同一条链接），潮汕籍与非潮汕籍大致各半</p>
-<p>对应交付：表7 问卷投放 + Q_原始／Q_清洗；本页可直接照抄进腾讯问卷／问卷星</p>
-</blockquote>
 
-<h2>〇、问卷设置（建卷时先设好这几项，不做等于白收）</h2>
-<ol>
-<li><strong>同一微信／同一账号限填一次</strong>（问卷星"防重复提交"、腾讯问卷"限制填写次数"）。</li>
-<li><strong>最短答题时间 90 秒</strong>（16 题正常 3 分钟以上，几十秒交的必是乱填）。</li>
-<li>第 5 题选"从没刷到"的人，<strong>跳到第 13 题</strong>（逻辑跳转）。</li>
-<li>第 16 题设为<strong>非必答</strong>（有人不愿写）。</li>
-<li>建完<strong>截图留证</strong>（防重复设置页 + 最短时长设置页），方法章要用。</li>
-</ol>
+<div class="warn"><b>这一页是给 B4 同学、B6 同学建卷用的题目清单，不是受访者填的那一份。</b>受访者填的是腾讯问卷／问卷星里的链接——把下面的卷首语、题目、选项照抄进去，别把这一页直接发出去。</div>
 
-<h2>一、卷首语（必填，作为知情同意）</h2>
+<div class="meta">
+  <p><span class="k">目标样本</span><strong>80 份有效卷</strong>（B4 同学＋B6 同学两人合计，共用一条链接，只看合计）</p>
+  <p><span class="k">样本结构</span>潮汕籍与非潮汕籍大致各半</p>
+  <p><span class="k">对应交付</span>表7 问卷投放 ＋ <code>Q_原始</code>（B4 同学交）／<code>Q_清洗</code>（B6 同学交）</p>
+  <p><span class="k">另一组</span>A 组问卷见 <a href="受众问卷A_16题.html">受众问卷 A（16 题）</a>——问"进不进得去"，别拿错</p>
+</div>
+
+<h2><span class="no">0</span>建卷设置（先设好这几项，不做等于白收）</h2>
+
+<table>
+<thead><tr><th style="width:130px">设置项</th><th>值</th></tr></thead>
+<tbody>
+<tr><td>问卷标题</td><td>潮汕非遗短视频：你刷到什么、怎么判断</td></tr>
+<tr><td>问卷说明</td><td>照抄下面「一、卷首语」</td></tr>
+<tr><td>结束语</td><td>照抄「三、结束语」</td></tr>
+<tr><td>是否匿名</td><td><strong>是</strong>——不收集姓名、手机号、微信</td></tr>
+<tr><td>防重复</td><td><strong>同一微信／同一账号限填一次</strong>（必开，评委要看设置截图）</td></tr>
+<tr><td>答题时长下限</td><td><strong>90 秒</strong>（16 题正常 3 分钟以上，几十秒交的必是乱填）</td></tr>
+<tr><td>逻辑跳转</td><td>Q5 选④（从没刷到过）→<strong>跳至 Q13</strong></td></tr>
+<tr><td>非必答题</td><td>Q16 设为<strong>非必答</strong>（有人不愿写）</td></tr>
+<tr><td>红包／抽奖</td><td>无（零经费，靠群转发与社群扩散）</td></tr>
+<tr><td>要留的截图</td><td>防重复设置页 ＋ 最短时长设置页，方法章要用</td></tr>
+</tbody>
+</table>
+
+<h2><span class="no">一</span>卷首语（必填，作为知情同意）</h2>
 <blockquote>
 <p>同学你好，我们在做第十届"挑战杯"的调研，想了解大家平时刷潮汕非遗类短视频的真实感受。</p>
 <p>问卷 16 题，约 6 分钟，<strong>匿名、不收集姓名和手机号</strong>，结果只用于学术报告，不外传、不商用。</p>
 <p>没有对错，凭第一感觉选就行。谢谢！</p>
 </blockquote>
 
-<h2>二、正式题目</h2>
+<h2><span class="no">二</span>正式题目（16 题）</h2>
+<p style="font-size:14px;color:var(--ink3)">A 部分 5 题（Q1–Q5）· B 部分 7 题（Q6–Q12，本问卷核心）· C 部分 4 题（Q13–Q16）。<strong>题目和选项一字不改地抄进去</strong>，顺序不要调。</p>
 
-<h3>A 部分｜基本情况（5 题）</h3>
-<table>
-<tr><th style="width:52px">题号</th><th>题目</th><th style="width:96px">题型</th></tr>
-<tr><td><strong>1</strong></td><td>你的身份是：<br>① 潮汕本地人（汕头／潮州／揭阳）　② 在潮汕读书的非本地人　③ 外地人，来过潮汕　④ 外地人，没来过潮汕</td><td>单选</td></tr>
-<tr><td><strong>2</strong></td><td>你的年龄：<br>① 18 岁以下　② 18–25　③ 26–35　④ 36–45　⑤ 46–55　⑥ 56 岁以上</td><td>单选</td></tr>
-<tr><td><strong>3</strong></td><td>你平时刷短视频的频率：<br>① 几乎每天　② 每周几次　③ 偶尔　④ 几乎不刷</td><td>单选</td></tr>
-<tr><td><strong>4</strong></td><td>你主要在哪些平台刷（可多选）：<br>① 抖音　② 快手　③ 小红书　④ B 站　⑤ 微信视频号　⑥ 其他</td><td>多选</td></tr>
-<tr><td><strong>5</strong></td><td>你刷到过潮汕非遗类的短视频吗：<br>① 经常刷到　② 偶尔刷到　③ 刷到过但没印象　④ 从没刷到过（<em>选④请直接跳到第 13 题</em>）</td><td>单选</td></tr>
-</table>
+<h3>A 部分｜基本情况（Q1–Q5）</h3>
 
-<h3>B 部分｜刷到什么、像不像潮汕（7 题，本问卷核心）</h3>
-<table>
-<tr><th style="width:52px">题号</th><th>题目</th><th style="width:96px">题型</th></tr>
-<tr><td><strong>6</strong></td><td>最近一个月，你刷到过哪些潮汕非遗（可多选）：<br>① 英歌舞　② 潮剧　③ 潮绣　④ 潮州木雕　⑤ 嵌瓷　⑥ 工夫茶　⑦ 侨批　⑧ 其他　⑨ 记不清</td><td>多选</td></tr>
-<tr><td><strong>7</strong></td><td>这类视频里，<strong>有没有说清这是潮汕哪里</strong>（哪个市、哪条街、哪个村）：<br>① 基本都说　② 大约一半会说　③ 很少说　④ 从来不说</td><td>单选</td></tr>
-<tr><td><strong>8</strong></td><td>视频里<strong>有没有潮汕话</strong>：<br>① 有原声潮汕话　② 有潮汕话字幕／配音　③ 只有普通话　④ 完全没有语言（只有画面配乐）</td><td>单选</td></tr>
-<tr><td><strong>9</strong></td><td>视频<strong>有没有讲解</strong>（说清这是什么、怎么做、谁在做）：<br>① 讲得很清楚　② 简单几句　③ 只有画面，没有讲解</td><td>单选</td></tr>
-<tr><td><strong>10</strong></td><td>你刷到过<strong>"其实不是潮汕"</strong>的视频吗（外地画面、张冠李戴、别的地区的民俗被标成潮汕）：<br>① 遇到过好几次　② 好像有，但说不准　③ 没遇到过</td><td>单选</td></tr>
-<tr><td><strong>11</strong></td><td>看到一个潮汕非遗视频，你<strong>最先注意到</strong>的是：<br>① 画面好不好看　② 是不是我家乡／我熟悉的地方　③ 有没有讲清楚　④ 有没有潮汕话　⑤ 说不清，就是刷过去了</td><td>单选</td></tr>
-<tr><td><strong>12</strong></td><td>如果一条视频没说清这是潮汕哪里，你还会看完吗：<br>① 会看完　② 看情况，内容好就看　③ 直接划走</td><td>单选</td></tr>
-</table>
+<div class="q">
+  <div class="qh"><span class="qn">Q1</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">你的身份是</p>
+  <ul class="opts cols"><li>潮汕本地人（汕头／潮州／揭阳）</li><li>在潮汕读书的非本地人</li><li>外地人，来过潮汕</li><li>外地人，没来过潮汕</li></ul>
+  <p class="note">【逻辑】① 记为<b>潮汕籍</b>，②③④ 记为<b>非潮汕籍</b>；样本结构靠这题控制。</p>
+</div>
 
-<h3>C 部分｜判断、转化与期待（4 题）</h3>
-<table>
-<tr><th style="width:52px">题号</th><th>题目</th><th style="width:96px">题型</th></tr>
-<tr><td><strong>13</strong></td><td>你觉得<strong>一条视频算得上"潮汕"</strong>，最重要的是（最多选 2 项）：<br>① 出现具体地点（街名、村名、建筑）　② 有潮汕话　③ 有本地人出镜　④ 有非遗传承人或作坊　⑤ 文案或标题写明潮汕　⑥ 画面里的景物我认得</td><td>多选（限 2）</td></tr>
-<tr><td><strong>14</strong></td><td>你会因为一条视频<strong>专门去某个地方</strong>吗：<br>① 去过　② 想去，还没去　③ 不会，看看就够了</td><td>单选</td></tr>
-<tr><td><strong>15</strong></td><td>你会把潮汕非遗视频<strong>转给外地朋友</strong>吗：<br>① 经常转　② 偶尔转　③ 很少转　④ 不转，为什么＿＿＿＿</td><td>单选 + 补充</td></tr>
-<tr><td><strong>16</strong></td><td>你觉得现在网上讲潮汕的短视频，<strong>最缺的是什么</strong>？如果只能改一处，你最想让它改什么？（一句话就行）</td><td>开放（非必答）</td></tr>
-</table>
+<div class="q">
+  <div class="qh"><span class="qn">Q2</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">你的年龄</p>
+  <ul class="opts cols"><li>18 岁以下</li><li>18–25</li><li>26–35</li><li>36–45</li><li>46–55</li><li>56 岁以上</li></ul>
+</div>
 
-<h2>三、结束语</h2>
+<div class="q">
+  <div class="qh"><span class="qn">Q3</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">你平时刷短视频的频率</p>
+  <ul class="opts cols"><li>几乎每天</li><li>每周几次</li><li>偶尔</li><li>几乎不刷</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q4</span><span class="qt">多选 · 必答</span></div>
+  <p class="qs">你主要在哪些平台刷</p>
+  <ul class="opts cols"><li>抖音</li><li>快手</li><li>小红书</li><li>B 站</li><li>微信视频号</li><li>其他</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q5</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">你刷到过潮汕非遗类的短视频吗</p>
+  <ul class="opts cols"><li>经常刷到</li><li>偶尔刷到</li><li>刷到过但没印象</li><li>从没刷到过</li></ul>
+  <p class="note">【逻辑】选 ④ → 直接跳至 <b>Q13</b>（没刷到就答不了后面的内容题）。</p>
+</div>
+
+<h3>B 部分｜刷到什么、像不像潮汕（Q6–Q12，核心）</h3>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q6</span><span class="qt">多选 · 必答</span></div>
+  <p class="qs">最近一个月，你刷到过哪些潮汕非遗</p>
+  <ul class="opts cols"><li>英歌舞</li><li>潮剧</li><li>潮绣</li><li>潮州木雕</li><li>嵌瓷</li><li>工夫茶</li><li>侨批</li><li>其他</li><li>记不清</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q7</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">这类视频里，<strong>有没有说清这是潮汕哪里</strong>（哪个市、哪条街、哪个村）</p>
+  <ul class="opts cols"><li>基本都说</li><li>大约一半会说</li><li>很少说</li><li>从来不说</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q8</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">视频里<strong>有没有潮汕话</strong></p>
+  <ul class="opts cols"><li>有原声潮汕话</li><li>有潮汕话字幕／配音</li><li>只有普通话</li><li>完全没有语言（只有画面配乐）</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q9</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">视频<strong>有没有讲解</strong>（说清这是什么、怎么做、谁在做）</p>
+  <ul class="opts cols"><li>讲得很清楚</li><li>简单几句</li><li>只有画面，没有讲解</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q10</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">你刷到过<strong>"其实不是潮汕"</strong>的视频吗（外地画面、张冠李戴、别的地区的民俗被标成潮汕）</p>
+  <ul class="opts cols"><li>遇到过好几次</li><li>好像有，但说不准</li><li>没遇到过</li></ul>
+  <p class="note">这题是 B 组的命门：和 B3／B4 现场对照、B6 评论区原话三头对得上，报告才立得住。</p>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q11</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">看到一个潮汕非遗视频，你<strong>最先注意到</strong>的是</p>
+  <ul class="opts cols"><li>画面好不好看</li><li>是不是我家乡／我熟悉的地方</li><li>有没有讲清楚</li><li>有没有潮汕话</li><li>说不清，就是刷过去了</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q12</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">如果一条视频没说清这是潮汕哪里，你还会看完吗</p>
+  <ul class="opts cols"><li>会看完</li><li>看情况，内容好就看</li><li>直接划走</li></ul>
+</div>
+
+<h3>C 部分｜判断、转化与期待（Q13–Q16）</h3>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q13</span><span class="qt">多选 · 最多选 2 项 · 必答</span></div>
+  <p class="qs">你觉得<strong>一条视频算得上"潮汕"</strong>，最重要的是</p>
+  <ul class="opts cols"><li>出现具体地点（街名、村名、建筑）</li><li>有潮汕话</li><li>有本地人出镜</li><li>有非遗传承人或作坊</li><li>文案或标题写明潮汕</li><li>画面里的景物我认得</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q14</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">你会因为一条视频<strong>专门去某个地方</strong>吗</p>
+  <ul class="opts cols"><li>去过</li><li>想去，还没去</li><li>不会，看看就够了</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q15</span><span class="qt">单选 ＋ 补充 · 必答</span></div>
+  <p class="qs">你会把潮汕非遗视频<strong>转给外地朋友</strong>吗</p>
+  <ul class="opts cols"><li>经常转</li><li>偶尔转</li><li>很少转</li><li>不转，为什么＿＿＿＿</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q16</span><span class="qt">开放题 · 选填</span></div>
+  <p class="qs">你觉得现在网上讲潮汕的短视频，<strong>最缺的是什么</strong>？如果只能改一处，你最想让它改什么？</p>
+  <p class="note">一句话就行。建卷时设成非必答。</p>
+</div>
+
+<h2><span class="no">三</span>结束语</h2>
 <blockquote>
 <p>填完了，谢谢！如果你身边有潮汕的朋友或来过潮汕的同学，欢迎把链接转给他——我们想听更多人的真实感受。</p>
 </blockquote>
 
-<h2>四、投放与质量控制（给 B4 同学、B6 同学的操作要求）</h2>
-<ol>
+<h2><span class="no">四</span>投放与质量控制（B4 同学、B6 同学照这个做）</h2>
+
+<h3>4.1 投放分工</h3>
+<ul>
 <li><strong>两人共用一个链接</strong>：B4 同学发班群、社团群、私聊；B6 同学发老乡群、家人群、朋友圈。<strong>同一个群只发一次</strong>，别刷屏，隔一天补发一次。</li>
 <li><strong>合计 80 份即完成</strong>，不分开报数（同一链接本来就分不清谁收的）。表7「实际回收」只填合计一行。</li>
-<li><strong>有效卷判定四条</strong>：① 同一微信／同一 IP 重复填的只留最早一份；② 答题 &lt;90 秒；③ 全选同一项；④ 开放题空白过半。<strong>删了几份、为什么删，必须写明</strong>——这句话老师写方法章直接用。</li>
-<li><strong>12/02 原样导出</strong> Q_原始（不改任何一行）交 B6 同学；B6 同学另存后清洗，交 Q_清洗。</li>
+<li>12/01 晚看一次数：合计到 60 就够写；差得多早点说，别等到 12/02。</li>
 <li>别在卷首语里出现"潮汕文化很重要""政府应该……"这类引导话，<strong>会让结论不可信</strong>。</li>
-</ol>
+</ul>
 
-<hr>
-<p style="font-size:13px;color:#7b8781">第十届"挑战杯"汕头职业技术学院学生课外学术科技作品竞赛 · 哲学社会科学类社会调查报告 ｜ B 组配套问卷 ｜ 指导老师：胡泽川　彭堉斌</p>
+<h3>4.2 有效问卷判定标准（写进方法章）</h3>
+<p>同时满足以下四条才计为有效：</p>
+<ol>
+<li>同一微信／同一 IP 重复填的，只留最早一份</li>
+<li>答题时长 ≥ 90 秒</li>
+<li>全选同一项（直线作答）剔除；跳答的题不适用此条</li>
+<li>开放题空白过半</li>
+</ol>
+<p class="note"><b>删了几份、为什么删，必须写明</b>——这句话老师写方法章直接用。</p>
+
+<h3>4.3 需要记录的元数据（用于方法章和附录）</h3>
+<ul>
+<li>投放起止日期、各渠道投放数量</li>
+<li>回收总数 / 有效数 / 有效率</li>
+<li>样本结构：潮汕籍 vs 非潮汕籍、年龄段、平台分布</li>
+<li>局限说明：便利抽样、以青年与在校生为主、结论不外推至全体短视频用户</li>
+</ul>
+
+<h2><span class="no">五</span>可直接引用的问卷来源说明（方法章用）</h2>
+<ul>
+<li><strong>五项判断量表</strong>（像不像潮汕／讲没讲清／有没有潮汕话／想不想再看／会不会转给外地朋友，各 1–5 分）：由本团队自编，参照"地方性"与"真实性"研究中常见的观察维度拟定，<strong>不是国际通用成熟量表</strong>，因此只在报告里报内部一致性系数 Cronbach's α，不宣称行业基准。</li>
+<li><strong>其余题目</strong>（Q1–Q12、Q13–Q16）：描述性题目，由本团队自编，经 3 位指导教师审读、10 名同学试填后修订，<strong>不做信效度检验</strong>。</li>
+<li>与 A 组的区别：A 组 Q7 用的是国际通用的 SUS 量表（有 68 分基准），B 组没有等价的通用量表——<strong>两组数据不要拿"分数高低"直接比</strong>，只能比"同一组内部的分布和落差"。这一句要写进方法章的局限里。</li>
+</ul>
+<blockquote>
+<p>⚠ 别把 B 组的五项判断说成"国际通用量表"，也别拿它和 A 组的 SUS 分数并列比较——评审一眼能看出问题。</p>
+</blockquote>
+
+<footer class="page">
+第十届"挑战杯"汕头职业技术学院学生课外学术科技作品竞赛 · 哲学社会科学类社会调查报告<br>
+B 组配套问卷（地方性）｜指导老师：胡泽川　彭堉斌<br>
+本组另一份材料：<a href="采集表工具包_B组_短视频.xlsx">采集表工具包（B 组）</a>　·　另一组问卷：<a href="受众问卷A_16题.html">受众问卷 A（16 题）</a>
+</footer>
+
 </main>
 </body>
 </html>

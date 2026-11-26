@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#134e4a">
+<title>受众问卷 A（16 题）｜潮汕文化数字资源使用体验调查</title>
+<style>
+:root{--paper:#f7f5f0;--ink:#1c2521;--ink2:#4a5751;--ink3:#7b8781;--teal:#134e4a;--teal2:#1f6f68;--soft:#e3efec;--clay:#b4451f;--claysoft:#fbeee8;--line:#dfdcd2;--line2:#ecebe4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);line-height:1.78;font-size:16px;overflow-wrap:break-word;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif}
+.top{background:radial-gradient(120% 120% at 100% 0%,rgba(31,111,104,.5) 0,rgba(19,78,74,0) 55%),linear-gradient(160deg,#134e4a,#0f3b38);color:#f4f1e9;padding:24px 0 20px}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+.top .tag{font-size:12.5px;letter-spacing:.12em;color:#c7ded9}
+.top h1{font-family:"Songti SC","STSong",serif;font-size:22px;margin:8px 0 0;line-height:1.4;color:#fff}
+.top .sub{margin:6px 0 0;font-size:13.5px;color:#c7ded9}
+main{max-width:820px;margin:0 auto;padding:18px 18px 40px}
+h2,h3{font-family:"Songti SC","STSong",serif;line-height:1.4}
+h2{font-size:19px;margin:32px 0 12px;padding-left:11px;border-left:3px solid var(--teal);display:flex;align-items:baseline;gap:8px}
+h2 .no{font-size:13.5px;font-weight:700;color:var(--teal2);letter-spacing:.06em;background:var(--soft);border-radius:5px;padding:1px 7px}
+h3{font-size:16px;margin:20px 0 4px;color:var(--teal)}
+p{margin:9px 0;color:var(--ink2)}
+strong{color:var(--ink)}
+hr{border:none;border-top:1px dashed var(--line);margin:24px 0}
+code{background:#efece4;padding:1px 5px;border-radius:4px;font-size:13.5px}
+
+.warn{margin:16px 0 0;padding:11px 14px;background:var(--claysoft);border:1px solid #efd6c9;border-radius:10px;color:#8a3517;font-size:14px}
+.warn b{color:#7a2d12}
+
+.meta{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 15px;margin:16px 0 0;font-size:14.5px}
+.meta p{margin:4px 0}
+.meta .k{color:var(--ink3);font-size:13px;margin-right:6px}
+.meta a{color:var(--teal2)}
+
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{padding:8px 11px;border-bottom:1px solid var(--line2);text-align:left;vertical-align:top}
+th{background:#f2f0e9;font-size:13px;color:var(--ink2);font-weight:700}
+tr:last-child td{border-bottom:none}
+
+.q{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 15px;margin:11px 0}
+.qh{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.qn{background:var(--teal);color:#fff;font-weight:800;font-size:12.5px;border-radius:5px;padding:1px 7px;letter-spacing:.02em}
+.qt{font-size:12.5px;color:var(--ink3)}
+.qs{margin:6px 0 2px;font-weight:700;color:var(--ink);font-size:15.5px}
+.opts{margin:7px 0 0;padding:0;list-style:none;font-size:15px}
+.opts li{position:relative;padding-left:19px;margin:3px 0;color:var(--ink2)}
+.opts li:before{content:"○";position:absolute;left:1px;top:0;color:#b9c4bf;font-size:13px}
+.opts.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0 14px}
+.note{margin:9px 0 0;padding:7px 11px;background:#fbfaf6;border-left:2px solid #d9d3c4;border-radius:0 7px 7px 0;font-size:13.5px;color:var(--ink3)}
+.note b{color:#8a6a2c}
+blockquote{margin:11px 0;padding:12px 15px;background:#fff;border-left:3px solid var(--teal);border-radius:0 10px 10px 0;color:var(--ink2);font-size:15px}
+blockquote p{margin:5px 0}
+ol,ul{padding-left:21px;color:var(--ink2)}
+li{margin:5px 0}
+
+footer.page{margin:34px 0 0;padding:16px 0 0;border-top:1px solid var(--line);font-size:13px;color:var(--ink3);text-align:center;line-height:1.9}
+footer.page a{color:var(--teal2)}
+
+@media (max-width:640px){
+  body{font-size:15.5px}
+  table{font-size:13.5px}
+  th,td{padding:7px 9px}
+  h2{font-size:18px}
+  .top h1{font-size:20px}
+  .opts.cols{grid-template-columns:1fr}
+}
+@media print{.top{background:#fff;color:#000;border-bottom:1px solid #000}.top .tag,.top .sub{color:#333}.top h1{color:#000}.warn{border:1px solid #999}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="tag">挑战杯 · A 组受众问卷｜16 题 · 约 6 分钟</div>
+  <h1>潮汕文化数字资源使用体验调查</h1>
+  <div class="sub">《云端有座潮汕，为什么没人走进去？》配套 · 测"进不进得去"</div>
+</div></header>
+
+<main>
+
+<div class="warn"><b>这一页是给 A4 同学、A6 同学建卷用的题目清单，不是受访者填的那一份。</b>受访者填的是问卷星／腾讯问卷里的链接——把下面的卷首语、题目、选项照抄进去，别把这一页直接发出去。</div>
+
+<div class="meta">
+  <p><span class="k">目标样本</span><strong>80 份有效卷</strong>（A4 同学＋A6 同学两人合计，共用一条链接，只看合计）</p>
+  <p><span class="k">样本结构</span>潮汕籍与非潮汕籍大致各半</p>
+  <p><span class="k">对应交付</span>表7 问卷投放 ＋ <code>Q_原始</code>（A4 同学交）／<code>Q_清洗</code>（A6 同学交）</p>
+  <p><span class="k">另一组</span>B 组问卷见 <a href="受众问卷B_16题.html">受众问卷 B（16 题）</a>——问"像不像潮汕"，别拿错</p>
+</div>
+
+<h2><span class="no">0</span>建卷设置（先设好这几项，不做等于白收）</h2>
+
+<table>
+<thead><tr><th style="width:130px">设置项</th><th>值</th></tr></thead>
+<tbody>
+<tr><td>问卷标题</td><td>潮汕文化数字资源使用体验调查</td></tr>
+<tr><td>问卷说明</td><td>照抄下面「一、卷首语」</td></tr>
+<tr><td>结束语</td><td>照抄「三、结束语」</td></tr>
+<tr><td>是否匿名</td><td><strong>是</strong>——不收集姓名、手机号、微信</td></tr>
+<tr><td>防重复</td><td><strong>同一微信／同一账号限填一次</strong>（必开，评委要看设置截图）</td></tr>
+<tr><td>答题时长下限</td><td><strong>90 秒</strong>（16 题正常 3 分钟以上，几十秒交的必是乱填）</td></tr>
+<tr><td>逻辑跳转</td><td>Q5 选 I（都没听说过）或 Q6 选"都没有真正用过"→<strong>跳至 Q13</strong></td></tr>
+<tr><td>非必答题</td><td>Q16 设为<strong>非必答</strong>（有人不愿写）</td></tr>
+<tr><td>红包／抽奖</td><td>无（零经费，靠群转发与社群扩散）</td></tr>
+<tr><td>要留的截图</td><td>防重复设置页 ＋ 最短时长设置页，方法章要用</td></tr>
+</tbody>
+</table>
+
+<h2><span class="no">一</span>卷首语（必填，作为知情同意）</h2>
+<blockquote>
+<p>您好！我们是汕头职业技术学院的学生调研团队，正在做一项关于<strong>潮汕文化数字资源使用情况</strong>的学术调研（用于"挑战杯"竞赛的社科类调查报告）。</p>
+<p>本问卷<strong>匿名填写</strong>，不收集您的姓名、手机号等任何可识别个人身份的信息，结果仅用于学术研究，不会用于商业用途。</p>
+<p>全程约 <strong>6 分钟</strong>。题目没有对错，请按您的真实感受作答。您可以随时关闭页面退出，已填内容不会被保存。</p>
+<p>如您愿意继续，请点击"开始作答"，即表示您已了解上述说明并同意参与本次调查。</p>
+<p>感谢您的帮助！</p>
+</blockquote>
+
+<h2><span class="no">二</span>正式题目（16 题）</h2>
+<p style="font-size:14px;color:var(--ink3)">A 部分 4 题（Q1–Q4）· B 部分 5 题（Q5–Q9，本问卷核心）· C 部分 7 题（Q10–Q16）。<strong>题目和选项一字不改地抄进去</strong>，顺序不要调。</p>
+
+<h3>A 部分｜基本情况（Q1–Q4）</h3>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q1</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">您的籍贯属于</p>
+  <ul class="opts cols"><li>汕头市</li><li>潮州市</li><li>揭阳市</li><li>广东省内其他城市</li><li>广东省外</li></ul>
+  <p class="note">【逻辑】选前三项 → 标记为<b>潮汕籍</b>；后两项 → <b>非潮汕籍</b>。样本结构靠这一题控制。</p>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q2</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">您的年龄段</p>
+  <ul class="opts cols"><li>18 岁以下</li><li>18–24 岁</li><li>25–34 岁</li><li>35–44 岁</li><li>45–54 岁</li><li>55 岁及以上</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q3</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">您目前的身份</p>
+  <ul class="opts cols"><li>在校学生（高职／专科）</li><li>在校学生（本科及以上）</li><li>企事业单位在职人员</li><li>个体经营／自由职业</li><li>退休</li><li>其他</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q4</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">您与潮汕地区的接触程度</p>
+  <ul class="opts cols"><li>长期在潮汕居住生活</li><li>去旅游过 1–3 次</li><li>只路过或短暂停留</li><li>从未到访</li></ul>
+</div>
+
+<h3>B 部分｜知晓与接触（Q5–Q9，核心）</h3>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q5</span><span class="qt">多选 · 必答</span></div>
+  <p class="qs">以下潮汕文化数字资源，您听说过哪些？</p>
+  <table>
+    <thead><tr><th style="width:60%">选项</th><th>资源类型</th></tr></thead>
+    <tbody>
+    <tr><td>A. 中国传统村落数字博物馆（住建部主办，含广东村落馆）</td><td>国家级平台</td></tr>
+    <tr><td>B. 汕头市侨批文物馆线上数字展厅</td><td>地方馆藏</td></tr>
+    <tr><td>C. "乡音读侨批"小程序</td><td>地方馆藏（小程序）</td></tr>
+    <tr><td>D. 汕头市博物馆／文化馆线上展厅</td><td>地方馆藏</td></tr>
+    <tr><td>E. 汕头小公园开埠区线上 VR／数字导览</td><td>街区数字孪生</td></tr>
+    <tr><td>F. 潮州古城／广济桥线上云游</td><td>景区数字孪生</td></tr>
+    <tr><td>G. 抖音／小红书／B 站上的潮汕非遗短视频</td><td>平台内容</td></tr>
+    <tr><td>H. 720 云等平台的潮汕全景作品</td><td>民间 UGC</td></tr>
+    <tr><td>I. 以上都没听说过</td><td><strong>互斥项</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="note">【逻辑】选 I → 直接跳至 <b>Q13</b>；I 要设为互斥项（选了就不能再选别的）。<br>【重要】这份名单要和普查确认的 12–15 个测评对象<b>一一对应</b>；普查发现某个平台已下线，投放前换同类资源，别留死项。</p>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q6</span><span class="qt">多选 · 必答</span></div>
+  <p class="qs">其中，您实际点开使用过的是哪些？</p>
+  <p class="note" style="margin:4px 0 0">选项同 Q5，去掉 I，另加一项"都没有真正用过"。</p>
+  <p class="note">【逻辑】选"都没有真正用过"→ 跳至 <b>Q13</b>。这题用来算"知晓率 → 打开率"的落差，是全篇最硬的一个数。</p>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q7</span><span class="qt">量表 · 10 句 · 必答（SUS）</span></div>
+  <p class="qs">请回想您<strong>最近一次</strong>使用这类潮汕文化数字资源的体验（用过多个就挑印象最深的那个），对下面 10 句话打分</p>
+  <p class="note" style="margin:6px 0 4px">5＝非常同意　4＝同意　3＝一般　2＝不同意　1＝非常不同意</p>
+  <ol>
+    <li>我愿意经常使用这个平台</li>
+    <li>我觉得这个平台过于复杂</li>
+    <li>我觉得这个平台容易使用</li>
+    <li>我需要技术人员的帮助才能使用这个平台</li>
+    <li>我觉得这个平台的各项功能整合得很好</li>
+    <li>我觉得这个平台前后不一致的地方太多</li>
+    <li>我认为大多数人能很快学会使用这个平台</li>
+    <li>我觉得这个平台用起来很麻烦</li>
+    <li>我对使用这个平台很有信心</li>
+    <li>我需要学很多东西才能上手这个平台</li>
+  </ol>
+  <p class="note">【计分】第 1、3、5、7、9 题：得分 − 1；第 2、4、6、8、10 题：5 − 得分。十题相加 × 2.5 ＝ <b>SUS 总分（0–100）</b>；<b>行业公认及格线 68 分</b>，低于 68 判为可用性不达标。<br>【注意】标准量表，<b>题目文字、顺序、5 点刻度都不许改</b>，改了信效度就没有依据。</p>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q8</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">那次使用之后，您还继续用过吗？</p>
+  <ul class="opts cols"><li>经常回访</li><li>偶尔再用</li><li>用过一两次就没再用</li><li>只用过那一次</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q9</span><span class="qt">开放题 · 必答</span></div>
+  <p class="qs">如果没有继续使用，最主要的原因是什么？</p>
+  <p class="note">题干下方加提示语：一句话就行，越具体越好。例如"在手机上打不开""找不到入口""看两分钟就没什么可看的了""不知道它能干什么"。<br>【分析用】这题是本问卷最有价值的一题，收上来后按主题编码，编码表见工具包。</p>
+</div>
+
+<h3>C 部分｜意愿、认知与需求（Q10–Q16）</h3>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q10</span><span class="qt">量表 · 必答</span></div>
+  <p class="qs">未来半年，您是否愿意再使用这类资源？</p>
+  <p class="note" style="margin:4px 0 0">5＝非常愿意　4＝比较愿意　3＝说不清　2＝不太愿意　1＝完全不愿意</p>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q11</span><span class="qt">量表 · 必答</span></div>
+  <p class="qs">您是否愿意把它推荐给朋友或家人？</p>
+  <p class="note" style="margin:4px 0 0">同上 5 点刻度</p>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q12</span><span class="qt">单选 · 必答</span></div>
+  <p class="qs">使用这类数字资源后，您对潮汕文化的了解程度有何变化？</p>
+  <ul class="opts cols"><li>明显提高</li><li>有所提高</li><li>差不多，没什么变化</li><li>反而更模糊了</li><li>说不清</li></ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q13</span><span class="qt">多选 · 最多选 3 项 · 必答</span></div>
+  <p class="qs">您最希望这类资源增加哪些内容或功能？</p>
+  <ul class="opts cols">
+    <li>潮汕话语音讲解</li><li>手艺人／非遗传承人亲自出镜讲解</li>
+    <li>可以自由行走（第一人称）的古村或老街</li><li>能放大看清纹样、雕花等细节</li>
+    <li>参观预约、开放时间、交通指引</li><li>文创产品与本地特产购买入口</li>
+    <li>配套的学校研学课程或作业</li><li>手机一键进入，不用下载 APP</li>
+    <li>其他（请填写）：＿＿＿＿</li>
+  </ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q14</span><span class="qt">多选 · 最多选 3 项 · 必答</span></div>
+  <p class="qs">您认为目前这类资源最大的问题是？</p>
+  <ul class="opts cols">
+    <li>根本不知道有这些东西</li><li>知道，但找不到入口</li>
+    <li>打开慢、卡顿、加载失败</li><li>内容太少、太浅，看完就没了</li>
+    <li>看不懂，没有讲解</li><li>只能看不能互动，不够沉浸</li>
+    <li>没有潮汕话，缺少本地味道</li><li>手机上打不开，必须用电脑或下载软件</li>
+    <li>其他（请填写）：＿＿＿＿</li>
+  </ul>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q15</span><span class="qt">滑块 · 0–100 · 必答</span></div>
+  <p class="qs">相比亲自到潮汕走一趟，您觉得这类数字资源能替代多少？</p>
+  <p class="note" style="margin:4px 0 0">0＝完全不能替代　100＝完全可以替代（建卷用"滑块题"，别用填空框）</p>
+</div>
+
+<div class="q">
+  <div class="qh"><span class="qn">Q16</span><span class="qt">开放题 · 选填</span></div>
+  <p class="qs">关于潮汕文化的数字化，您还有什么想说的？</p>
+</div>
+
+<h2><span class="no">三</span>结束语</h2>
+<blockquote>
+<p>问卷到此结束，感谢您的耐心作答！</p>
+<p>如果您愿意帮我们转给更多潮汕朋友填写，欢迎分享链接。祝您生活愉快！</p>
+</blockquote>
+
+<h2><span class="no">四</span>投放与质量控制（A4 同学、A6 同学照这个做）</h2>
+
+<h3>4.1 零成本投放渠道（按优先级）</h3>
+<table>
+<thead><tr><th style="width:36%">渠道</th><th style="width:18%">预计回收</th><th>注意</th></tr></thead>
+<tbody>
+<tr><td>本班 ＋ 本院班级群</td><td>60–100</td><td>讲清匿名性，避免"帮老师填"式的敷衍作答</td></tr>
+<tr><td>潮汕本地兴趣社群（美食、非遗、旅游类微信群／QQ 群）</td><td>80–120</td><td>先说明来意再发链接，避免被踢</td></tr>
+<tr><td>小红书／抖音潮汕话题评论区邀请</td><td>50–80</td><td>不刷屏、不改头像冒充，说明学生身份</td></tr>
+<tr><td>亲友转发（每人转 5 个群）</td><td>60–100</td><td>注意样本会偏向中青年</td></tr>
+</tbody>
+</table>
+<p class="note"><b>不要买样本、不要用互填群刷量。</b>评审若要求提供投放截图与后台数据，刷量会直接判违规。</p>
+
+<h3>4.2 有效问卷判定标准（写进方法章）</h3>
+<p>同时满足以下四条才计为有效：</p>
+<ol>
+<li>答题时长 ≥ 90 秒</li>
+<li>Q5 与 Q6 的逻辑不矛盾（如 Q5 选"都没听说过"却在 Q6 选"用过某个"）</li>
+<li>Q7 十题未全部选同一选项（直线作答剔除）；跳答 Q7 的不适用此条</li>
+<li>非重复微信／IP</li>
+</ol>
+
+<h3>4.3 需要记录的元数据（用于方法章和附录）</h3>
+<ul>
+<li>投放起止日期、各渠道投放数量</li>
+<li>回收总数 / 有效数 / 有效率</li>
+<li>样本结构：潮汕籍 vs 非潮汕籍、年龄分布、身份分布</li>
+<li>局限说明：便利抽样、以中青年与在校生为主、结论不外推至全体潮汕居民</li>
+</ul>
+
+<h2><span class="no">五</span>可直接引用的问卷来源说明（方法章用）</h2>
+<ul>
+<li><strong>SUS（系统可用性量表）</strong>：由 Brooke 于 1986 年提出，是目前人机交互领域使用最广的可用性快速测量工具，10 题、5 点计分、换算为 0–100 分，行业公认均分基准为 68 分。本问卷 Q7 采用该量表原文的中文译版，<strong>未作改动</strong>。</li>
+<li><strong>其余题目</strong>：由本团队自编，经 3 位指导教师审读、10 名同学试填后修订。非量表式描述性题目（Q1–Q6、Q8、Q9、Q12–Q16）不适用信效度检验；量表式题目（Q7、Q10、Q11）报告内部一致性系数 Cronbach's α。</li>
+</ul>
+<blockquote>
+<p>⚠ 这一句必须写进方法章。很多参赛作品把人口学题也拿去做信效度检验，反而暴露对方法的理解不准确。</p>
+</blockquote>
+
+<footer class="page">
+第十届"挑战杯"汕头职业技术学院学生课外学术科技作品竞赛 · 哲学社会科学类社会调查报告<br>
+A 组配套问卷（可及性）｜指导老师：胡泽川　彭堉斌<br>
+本组另一份材料：<a href="采集表工具包_学生版.xlsx">采集表工具包（A 组）</a>　·　另一组问卷：<a href="受众问卷B_16题.html">受众问卷 B（16 题）</a>
+</footer>
+
+</main>
+</body>
+</html>
