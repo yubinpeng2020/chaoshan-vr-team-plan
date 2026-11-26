@@ -314,15 +314,6 @@ footer p{margin:0 0 6px}
   table.resp td::before{flex:0 0 54px}
 }
 
-/* ---------- 打印 ---------- */
-@media print{
-  .nav,.totop,.hero .facts{display:none}
-  body{background:#fff;font-size:11.5pt}
-  .hero{background:#fff;color:#000;border-bottom:1px solid #000}
-  .hero h1,.hero .sub,.hero .title-full{color:#000;border-color:#000}
-  .role{box-shadow:none;break-inside:avoid;page-break-inside:avoid}
-  section{padding-top:18px}
-}
 
 .topics{display:grid;gap:12px;margin:20px 0 0;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
 .topic{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:14px 16px}
@@ -340,6 +331,74 @@ footer p{margin:0 0 6px}
 .grp b{font-size:15px;color:var(--ink)}
 .grp em{font-style:normal;color:var(--ink-3);font-size:13px}
 @media (max-width:640px){.grp{margin:22px 0 10px}.grp b{font-size:14px}.topic b{font-size:14.5px}}
+/* ---------- 打印 / 导出 PDF（学生离线看） ---------- */
+@media print{
+  @page{size:A4;margin:13mm 12mm 16mm}
+  html,body{background:#fff!important}
+  body{font-size:10.5pt;line-height:1.62;color:#1c2521}
+  .nav,.totop,.hero .facts,.dl-btn,.pager,.backtop{display:none!important}
+  a{color:#134e4a;text-decoration:none}
+  img{max-width:100%}
+
+  /* 封面区：白底黑字，省墨 */
+  .hero{background:#fff!important;color:#000;border-bottom:1.5pt solid #134e4a;padding:0 0 9pt}
+  .hero .kicker{color:#4a5751}
+  .hero h1{color:#000;font-size:19pt;line-height:1.35;margin:4pt 0 0}
+  .hero .sub{color:#333;font-size:10pt;margin:5pt 0 0}
+  .topic{background:#f7f5f0!important;border:.8pt solid #c9c4b6!important;break-inside:avoid}
+  .topic .tag{background:#e3efec!important;color:#134e4a!important}
+  .topic b{color:#000!important}
+  .topic em{color:#333!important}
+
+  /* 分页规则 */
+  h2,h3,h4{break-after:avoid;break-inside:avoid}
+  .sec-head{break-after:avoid;break-inside:avoid}
+  .grp{break-after:avoid;break-inside:avoid}
+  /* 长岗卡（.role）允许跨页：否则整卡被顶到新页，节标题那页全空 */
+  .role-head{break-after:avoid;break-inside:avoid}
+  .rcard,.dl-card,.callout,.partner,.pos,.note,.topic,tr,li,blockquote,.steps>li,ol.steps{break-inside:avoid}
+  /* 12 个访谈表在纸上排成 6 列 2 行清单 */
+  .dl-names{break-inside:avoid;display:grid!important;grid-template-columns:repeat(6,1fr)!important;gap:4pt!important}
+  .dl-names a{display:flex!important;gap:3.5pt!important;border:.6pt solid #d8d3c4!important;
+    background:#fcfbf7!important;padding:3pt 4pt!important;font-size:8.5pt!important;border-radius:3pt!important}
+  .dl-names a b{font-size:8.5pt!important;color:#0b4740!important}
+  table{break-inside:auto}
+  section{margin:0;padding-top:0}
+  section + section{margin-top:13pt}
+  #ga,#gb,#all,#rules,#files{break-before:page}
+
+  /* 卡片：去阴影、压边距 */
+  .rcard,.role,.dl-card,.callout,.partner,.pos{
+    box-shadow:none!important;background:#fff!important;
+    border:.8pt solid #cfcab9!important;border-radius:8pt
+  }
+  .rcard{padding:8pt 10pt}
+  .rcard .job{font-size:9pt}
+  .grid-roles{grid-template-columns:1fr 1fr!important;gap:7pt!important}
+  /* 长岗卡改成"顶部深绿细线"，跨页时不会留下半截方框 */
+  .role{
+    border:0!important;border-top:1.4pt solid #134e4a!important;border-radius:0!important;
+    background:none!important;box-shadow:none!important;
+    padding:9pt 0 0!important;margin:0 0 15pt!important
+  }
+  .role h3{font-size:12.5pt;margin:0 0 4pt}
+  .role p{margin:5pt 0}
+  .partner{margin-top:7pt}
+  .badge{background:#134e4a!important;color:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .peer{background:#cfe6de!important;color:#0b4740!important;border-color:#a8cabe!important;
+        -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .chip,.chip.hrs,.chip.date{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+  /* 表格 */
+  table{font-size:9pt}
+  th{background:#efeadf!important;color:#1c2521!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  th,td{padding:4pt 6pt}
+  thead{display:table-header-group}
+
+  /* 下载区在纸上只留文件名 */
+  .dl-card{padding:7pt 9pt}
+  .dl-ico{background:#f2f0e9!important;color:#4a5751!important}
+}
 </style>
 </head>
 <body>
@@ -612,6 +671,14 @@ footer p{margin:0 0 6px}
           <em>问"刷到过什么、怎么判断这是潮汕"。<b>建卷用</b>（含卷首语、题目、设置项），不是给受访者填的那一份。目标 80 份（<span class="peer">B4 同学</span>＋<span class="peer">B6 同学</span>合计，同一条链接）。</em>
         </span>
         <span class="dl-btn">打开网页版</span>
+      </a>
+      <a class="dl-card" href="files/分工方案_12岗_2026-11-26.pdf" target="_blank" rel="noopener">
+        <span class="dl-ico">册</span>
+        <span class="dl-body">
+          <b>本页整份 PDF（离线版）</b>
+          <em>内容就是这整页，做成 PDF 方便存手机、打印出来对照。<b>以网页为准</b>——网页改了 PDF 不会跟着变，拿不准就回来看这一页。</em>
+        </span>
+        <span class="dl-btn">打开 PDF</span>
       </a>
     </div>
 
